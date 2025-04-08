@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
 </head> 
 <body>
-<%! private static final Logger logger = LogManager.getLogger();%>>
+<%! private static final Logger logger = LogManager.getLogger("index.jsp");%>>
 <% logger.info("index.jsp Started......"); %>
     <div class="row g-0 d-flex align-items-center">
       <div class="col-lg-6">
