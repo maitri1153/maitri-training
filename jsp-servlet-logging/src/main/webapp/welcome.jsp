@@ -5,8 +5,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome Page</title>
+<title>Home Page</title>
 </head>
+<body>
 <body>
 	<h1>
 		<c:out value="${message}" />
