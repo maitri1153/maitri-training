@@ -33,19 +33,20 @@
 	#flash-card{
 		margin-bottom: 5px;
 	}
+	
 </style>
 	</head>
 
 	<body class="overflow-scroll">
 		<div id="page">
+
 			<h2>Dashboard</h2>
 			<div class="row"><!-- Top 4 Flash cards -->
-
 				<div class="col-sm-12 col-md-4 col-lg-3" id="flash-card">
 					<div class="card g-0">
-						<div class="row g-0">
+						<div class="row g-0" >
 							<div class="col-4 text-center" id="cpu">
-								<i class="bi bi-cpu" style="font-size:48px; color:white;"></i>
+								<div class="mt-2"><i class="bi bi-cpu" style="font-size:48px; color:white;"></i></div>
 							</div>
 							<div class="col-8">
 								<div class="card-body">
@@ -61,7 +62,7 @@
 					<div class="card g-0">
 						<div class="row g-0 ">
 							<div class="col-4 text-center" id="likes">
-								<i class="bi bi-heart" style="font-size:48px; color:white;"></i>
+								<div class="mt-2"><i class="bi bi-heart" style="font-size:48px; color:white;"></i></div>
 							</div>
 							<div class="col-8">
 								<div class="card-body">
@@ -77,7 +78,7 @@
 					<div class="card g-0">
 						<div class="row g-0">
 							<div class="col-4 text-center" id="sales">
-								<i class="bi bi-cart2" style="font-size:48px; color:white;"></i>
+								<div class="mt-2"><i class="bi bi-cart2" style="font-size:48px; color:white;"></i></div>
 							</div>
 							<div class="col-8">
 								<div class="card-body">
@@ -93,7 +94,7 @@
 					<div class="card g-0">
 						<div class="row g-0">
 							<div class="col-4 text-center" id="member">
-								<i class="bi bi-person-square" style="font-size:48px; color:white;"></i>
+								<div class="mt-2"><i class="bi bi-person-square" style="font-size:48px; color:white;"></i></div>
 							</div>
 							<div class="col-8">
 								<div class="card-body">
@@ -104,17 +105,15 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 
 			<div class="row" style="margin-top: 20px;">  
 
 				<div class="col-sm-12 col-md-4 col-lg-3"></div>
 				<div class="col-sm-12 col-md-4 col-lg-6"></div>
-				<div class="col-sm-12 col-md-4 col-lg-3">
-
+				<div class="col-sm-12 col-md-4 col-lg-3"> <!-- Progress bar-->
 					<h6 class="text-center">Goal Compliation</h6>
-					<div style="margin-top: 5px;">
+					<div style="margin-top: 10px;">
 						<label style="font-size: small;">Add Products to Cart</label>
 						<span class="position-absolute me-4 end-0" style="font-size: smaller;">300/600</span>
 						<div class="progress" style="height: 7px; margin-bottom:6 px;">
@@ -149,9 +148,37 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
+
 			</div>
 		</div> 
 	</body>
 </html>
+
+<!--<div class="row">  
+		<div class="col-lg-4"></div>
+		<div class="col-lg-4"></div>
+		<div class="col-lg-4">
+			<canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+			<script>
+				const xValues = ["Google","Fire-fox","Opera","Safari"];
+				const yValues = [ 55, 49, 44, 24 ];
+				const barColors = [ "#FFFF99", "#CCE5FF", "#E5FFCC", "#FFEBCD"];
+
+				new Chart("myChart", { type : "doughnut",
+					data : {
+						    labels   : xValues,
+						    datasets : [{
+								backgroundColor : barColors,
+								data : yValues 
+							}]
+					},
+					options : {
+						title : {
+							display : true,
+							text : "Browser Usage"
+							}
+					}
+				});
+			</script>
+		</div>-->
