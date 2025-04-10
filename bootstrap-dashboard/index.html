@@ -24,19 +24,24 @@
 		background-color: orange;
 	}
 	#page{
+		margin-bottom: 50px;
 		margin-left: 10px;
 		margin-right: 10px;
 		margin-top: 5px;
+		font-family: Papyrus;
+	}
+	#flash-card{
+		margin-bottom: 5px;
 	}
 </style>
 	</head>
-	<body>
 
+	<body class="overflow-scroll">
 		<div id="page">
 			<h2>Dashboard</h2>
 			<div class="row"><!-- Top 4 Flash cards -->
 
-				<div class="col-sm-12 col-md-4 col-lg-3">
+				<div class="col-sm-12 col-md-4 col-lg-3" id="flash-card">
 					<div class="card g-0">
 						<div class="row g-0">
 							<div class="col-4 text-center" id="cpu">
@@ -52,7 +57,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-12 col-md-4 col-lg-3">
+				<div class="col-sm-12 col-md-4 col-lg-3" id="flash-card">
 					<div class="card g-0">
 						<div class="row g-0 ">
 							<div class="col-4 text-center" id="likes">
@@ -68,7 +73,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-12 col-md-4 col-lg-3">
+				<div class="col-sm-12 col-md-4 col-lg-3" id="flash-card">
 					<div class="card g-0">
 						<div class="row g-0">
 							<div class="col-4 text-center" id="sales">
@@ -84,7 +89,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-12 col-md-4 col-lg-3">
+				<div class="col-sm-12 col-md-4 col-lg-3" id="flash-card">
 					<div class="card g-0">
 						<div class="row g-0">
 							<div class="col-4 text-center" id="member">
@@ -99,7 +104,54 @@
 						</div>
 					</div>
 				</div>
+
 			</div>
-		</div>
+
+			<div class="row" style="margin-top: 20px;">  
+
+				<div class="col-sm-12 col-md-4 col-lg-3"></div>
+				<div class="col-sm-12 col-md-4 col-lg-6"></div>
+				<div class="col-sm-12 col-md-4 col-lg-3">
+
+					<h6 class="text-center">Goal Compliation</h6>
+					<div style="margin-top: 5px;">
+						<label style="font-size: small;">Add Products to Cart</label>
+						<span class="position-absolute me-4 end-0" style="font-size: smaller;">300/600</span>
+						<div class="progress" style="height: 7px; margin-bottom:6 px;">
+							<div class="progress-bar bg-info progress-bar-striped" role="progressbar" aria-valuenow="300" aria-valuemin="0" aria-valuemax="600" style="width:50%">
+							</div>
+			  			</div>
+					</div>
+					
+					<div style="margin-top: 10px;">
+						<label style="font-size: small;">Complete Purchase</label>
+						<span class="position-absolute me-4 end-0" style="font-size: smaller;">160/200</span>
+						<div class="progress" style="height:7px; margin-bottom: 6px;">
+							<div class="progress-bar bg-danger progress-bar-striped" role="progressbar" aria-valuenow="160" aria-valuemin="0" aria-valuemax="200" style="width:80%">
+							</div>
+						</div>
+					</div>
+
+					<div style="margin-top: 10px;">
+						<label style="font-size: small;">Visit Home Page</label>
+						<span class="position-absolute me-4 end-0" style="font-size: smaller;">50/200</span>
+						<div class="progress" style="height: 7px;">
+							<div class="progress-bar bg-success progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="200" style="width:25%">
+							</div>
+			  			</div>
+					</div>
+
+					<div style="margin-top: 10px;">
+						<label style="font-size: small;">Send Queries</label>
+						<span class="position-absolute me-4 end-0" style="font-size: smaller;">70/100</span>
+						<div class="progress" style="height: 7px;">
+							<div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div> 
 	</body>
 </html>
