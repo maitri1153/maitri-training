@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard</title>
+<link rel="stylesheet" href="bootstrap-5.3.5-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<style>
+	#cpu{
+		background-color: cornflowerblue;
+	}
+	#likes{
+		background-color:crimson;
+	}
+	#sales{
+		background-color:forestgreen;
+	}
+	#member{
+		background-color: orange;
+	}
+	#page{
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 5px;
+	}
+</style>
+</head>
+<body>
+
+	<div id="page">
+		<h2>Dashboard</h2>
+	<div class="row"><!-- Top 4 Flash cards -->
+
+		<div class="col-sm-12 col-md-4 col-lg-3">
+			<div class="card g-0">
+				<div class="row g-0">
+					<div class="col-4 text-center" id="cpu">
+						<i class="bi bi-cpu" style="font-size:48px; color:white;"></i>
+					</div>
+					<div class="col-8">
+						<div class="card-body">
+							<h5 class="card-title">CPU Traffic</h5>
+							<p class="card-text fw-bold">90 %</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-12 col-md-4 col-lg-3">
+			<div class="card g-0">
+				<div class="row g-0 ">
+					<div class="col-4 text-center" id="likes" >
+						<i class="bi bi-heart" style="font-size:48px; color:white;"></i>
+					</div>
+					<div class="col-8">
+						<div class="card-body">
+							<h5 class="card-title">Likes</h5>
+							<p class="card-text">2 M</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-12 col-md-4 col-lg-3">
+			<div class="card g-0">
+				<div class="row g-0">
+					<div class="col-4 text-center" id="sales">
+						<i class="bi bi-cart2" style="font-size:48px; color:white;"></i>
+					</div>
+					<div class="col-8">
+						<div class="card-body">
+							<h5 class="card-title">Sales</h5>
+							<p class="card-text">1.7 M</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-12 col-md-4 col-lg-3">
+			<div class="card g-0">
+				<div class="row g-0">
+					<div class="col-4 text-center" id="member">
+						<i class="bi bi-person-square" style="font-size:48px; color:white;"></i>
+					</div>
+					<div class="col-8">
+						<div class="card-body">
+							<h5 class="card-title">New Members</h5>
+							<p class="card-text">2 K</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- <div class="row">  
+		<div class="col-lg-4"></div>
+		<div class="col-lg-4"></div>
+		<div class="col-lg-4">
+			<h5>Goal Compliation</h5>
+		</div>
+	</div>
+	
+	<div class="row">  
+		<div class="col-lg-4"></div>
+		<div class="col-lg-4"></div>
+		<div class="col-lg-4">
+			<canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
+			<script>
+				const xValues = ["Google","Fire-fox","Opera","Safari"];
+				const yValues = [ 55, 49, 44, 24 ];
+				const barColors = [ "#FFFF99", "#CCE5FF", "#E5FFCC", "#FFEBCD"];
+
+				new Chart("myChart", { type : "doughnut",
+					data : {
+						    labels   : xValues,
+						    datasets : [{
+								backgroundColor : barColors,
+								data : yValues 
+							}]
+					},
+					options : {
+						title : {
+							display : true,
+							text : "Browser Usage"
+							}
+					}
+				});
+			</script>
+		</div>
+	</div> -->
+
+</body>
+</html>
