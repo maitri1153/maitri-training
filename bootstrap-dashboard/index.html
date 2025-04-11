@@ -10,79 +10,7 @@
 		<link rel="stylesheet" href="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js">
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-		<style>
-
-	#page{
-		margin-bottom: 50px;
-		margin-left: 10px;
-		margin-right: 10px;
-		margin-top: 5px;  
-		font-family:Arial;
-	}
-    #top-flash-card{
-		text-align: left;
-		margin-bottom: 10px;
-	} 
-	#cpu{
-		background-color: cornflowerblue;
-	}
-	#likes{
-		background-color:crimson;
-	}
-	#sales{
-		background-color:forestgreen;
-	}
-	#member{
-		background-color: orange;
-	}
-	#top-card-icon{
-		font-size: 48px;
-		color: white;
-	}
-
-	#progress-bar{
-		font-size: smaller;
-	}
-
-	#increments{
-		background-color:orange;
-		color: white;
-		height: 90px;
-		margin-bottom: 5px;
-	}
-	#mentions{
-		background-color:forestgreen;
-		color: white;
-		height: 90px;
-		margin-bottom: 5px;
-	}
-	#download{
-		background-color:crimson;
-		color: white;
-		height: 90px;
-		margin-top: 5px;
-	}
-	#message{
-		background-color:cornflowerblue;
-		color: white;
-		height: 90px;
-		margin-top: 5px;
-	}
-
-	#social-card-opc{
-		height: 90px;
-	}
-	
-	#social-icon{
-		font-size:45px;
-	}
-
-	#social-cards{
-		height:90px;
-		text-align: left;
-	}
-	
-</style>
+		<link rel="stylesheet" href="dashboard.css">
 	</head>
 
 	<body class="overflow-scroll">
@@ -202,8 +130,8 @@
 
 			</div>
 
-			<div> <!-- cards for social activity-->
-				<div class="col-sm-12 col-md-4 col-lg-3">
+			<div class="row">
+				<div class="col-sm-12 col-md-4 col-lg-3"> <!-- cards for social activity-->
 
 					<div class="card g-0" id="increments">
 						<div class="row g-0">
@@ -214,13 +142,15 @@
 							<div id="social-cards" class="col-9">
 								<div class="card-title">
 									<label class="ms-2">Increments<br>5,200</label>
-									<div class="progress bg-warning" style="height: 2px; width: inherit;">
+									<div class="progress bg-warning mb-2"
+										style="height: 2px; width: inherit;">
 										<div class="progress-bar progress-bar bg-white" role="progressbar"
 											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
 											style="width:50%">
 										</div>
 									</div>
-									<label class="ms-2">50% increase in 20 days</label>
+									<label class="ms-2" style="font-size: smaller;">50% increase in 20
+										days</label>
 								</div>
 							</div>
 						</div>
@@ -241,7 +171,8 @@
 											style="width:30%">
 										</div>
 									</div>
-									<label class="ms-2">30% increase in 20 days</label>
+									<label class="ms-2" style="font-size: smaller;">30% increase in 20
+										days</label>
 								</div>
 							</div>
 						</div>
@@ -257,13 +188,14 @@
 							<div id="social-cards" class="col-9">
 								<div class="card-title">
 									<label class="ms-2">Downloads<br>1,96,050</label>
-									<div class="progress bg-danger" style="height: 2px;">
+									<div class="progress bg-danger mb-2" style="height: 2px;">
 										<div class="progress-bar progress-bar bg-white" role="progressbar"
 											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
 											style="width:32%">
 										</div>
 									</div>
-									<label class="ms-2">32% increase in 20 days</label>
+									<label class="ms-2" style="font-size: smaller;">32% increase in 20
+										days</label>
 								</div>
 							</div>
 						</div>
@@ -278,18 +210,112 @@
 							<div id="social-cards" class="col-9">
 								<div class="card-title">
 									<label class="ms-2">Direct Message <br><b>1,64,987</b></label>
-									<div class="progress bg-primary" style="height: 2px;">
+									<div class="progress bg-primary mb-2" style="height: 2px;">
 										<div class="progress-bar progress-bar bg-white " role="progressbar"
 											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
 											style="width:42%">
 										</div>
 									</div>
-									<label class="ms-2">42% increase in 20 days</label>
+									<label class="ms-2" style="font-size: smaller;">42% increase in 20
+										days</label>
 								</div>
 							</div>
 						</div>
 					</div>
 
+				</div>
+
+				<div class="col-sm-12 col-md-4 col-lg-4"> <!-- New Members cards-->
+					<div class="overflow-scroll" style="height:375px;">
+						<nav class="navbar navbar-expand-lg bg-light">
+							<a class="navbar-brand">Latest Members</a>
+							<div class="ms-5">
+								<button class="btn btn-danger my-3 mt-1" type="submit"
+									style="font-size: xx-small;">8 new member</button>
+								<i class="bi bi-dash ms-3"></i>
+								<i class="bi bi-x fw-medium ms-2"></i>
+							</div>
+						</nav>
+
+						<div class="row"> <!--row-1-->
+							<div class="card border-0 col-3" id="profile-card">
+								<img src="Pictures/image.png" class="img-fluid align-middle rounded"
+									id="profile">
+								<div class="card-text " style="font-size: small; text-align: center;">
+									<label><b>Alexandar</b></label><br>
+									<label style="color: gray; margin-top: 0%;">Today</label>
+								</div>
+							</div>
+
+							<div class="card border-0 col-3" id="profile-card">
+								<img src="Pictures/profile.png"
+									class="img-fluid align-middle rounded-circle" id="profile">
+								<div class="card-text " style="font-size: small; text-align: center;">
+									<label><b>Norman</b></label><br>
+									<label style="color: gray; margin-top: 0%;">Yesterday</label>
+								</div>
+							</div>
+
+							<div class="card border-0 col-3" id="profile-card">
+								<img src="Pictures/profile2.jpeg"
+									class="img-fluid align-middle rounded-circle" id="profile">
+								<div class="card-text " style="font-size: small; text-align: center;">
+									<label><b>Jane</b></label><br>
+									<label style="color: gray; margin-top: 0%;">12 June</label>
+								</div>
+							</div>
+
+							<div class="card border-0 col-3" id="profile-card">
+								<img src="Pictures/images (3).png"
+									class="img-fluid align-middle rounded-circle" id="profile">
+								<div class="card-text " style="font-size: small; text-align: center;">
+									<label><b>John</b></label><br>
+									<label style="color: gray; margin-top: 0%;">12 Jan</label>
+								</div>
+							</div>
+						</div>
+
+						<div class="row"> <!--row-2-->
+							<div class="card border-0 col-3" id="profile-card">
+								<img src="Pictures/images (2).png"
+									class="img-fluid align-middle rounded"
+									id="profile">
+								<div class="card-text " style="font-size: small; text-align: center;">
+									<label><b>Jesica</b></label><br>
+									<label style="color: gray; margin-top: 0%;">13 June</label>
+								</div>
+							</div>
+
+							<div class="card border-0 col-3" id="profile-card">
+								<img src="Pictures/images (1).png"
+									class="img-fluid align-middle rounded-circle" id="profile">
+								<div class="card-text " style="font-size: small; text-align: center;">
+									<label><b>Sarah</b></label><br>
+									<label style="color: gray; margin-top: 0%;">14 June</label>
+								</div>
+							</div>
+
+							<div class="card border-0 col-3" id="profile-card">
+								<img src="Pictures/images.jpeg"
+									class="img-fluid align-middle rounded-circle" id="profile">
+								<div class="card-text " style="font-size: small; text-align: center;">
+									<label><b>Nora</b></label><br>
+									<label style="color: gray; margin-top: 0%;">15 Jan</label>
+								</div>
+							</div>
+
+							<div class="card border-0 col-3" id="profile-card">
+								<img src="Pictures/images.png"
+									class="img-fluid align-middle rounded-circle" id="profile">
+								<div class="card-text " style="font-size: small; text-align: center;">
+									<label><b>Nadia</b></label><br>
+									<label style="color: gray; margin-top: 0%;">15 Jan</label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-sm-12 col-md-4 col-lg-5"></div>
 				</div>
 			</div>
 		</div>

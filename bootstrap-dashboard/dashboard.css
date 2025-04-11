@@ -1,0 +1,81 @@
+#page{
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;  
+    font-family:Arial;
+}
+#top-flash-card{
+    text-align: left;
+    margin-bottom: 10px;
+} 
+#cpu{
+    background-color: cornflowerblue;
+}
+#likes{
+    background-color:crimson;
+}
+#sales{
+    background-color:forestgreen;
+}
+#member{
+    background-color: orange;
+}
+#top-card-icon{
+    font-size: 48px;
+    color: white;
+}
+
+#progress-bar{
+    font-size: smaller;
+}
+
+#increments{
+    background-color:orange;
+    color: white;
+    height: 90px;
+    margin-bottom: 5px;
+}
+#mentions{
+    background-color:forestgreen;
+    color: white;
+    height: 90px;
+    margin-bottom: 5px;
+}
+#download{
+    background-color:crimson;
+    color: white;
+    height: 90px;
+    margin-top: 5px;
+}
+#message{
+    background-color:cornflowerblue;
+    color: white;
+    height: 90px;
+    margin-top: 5px;
+}
+
+#social-card-opc{
+    height: 90px;
+}
+
+#social-icon{
+    font-size:45px;
+}
+
+#social-cards{
+    height:90px;
+    text-align: left;
+}
+
+#profile{
+    height: 97px;
+    width: 115px;
+}
+
+#profile-card{
+    height:120px;
+    width:95px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
