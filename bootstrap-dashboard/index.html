@@ -11,6 +11,18 @@
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 		<style>
+
+	#page{
+		margin-bottom: 50px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 5px;
+		font-family:Arial;
+	}
+    #top-flash-card{
+		text-align: left;
+		margin-bottom: 10px;
+	} 
 	#cpu{
 		background-color: cornflowerblue;
 	}
@@ -23,15 +35,51 @@
 	#member{
 		background-color: orange;
 	}
-	#page{
-		margin-bottom: 50px;
-		margin-left: 10px;
-		margin-right: 10px;
-		margin-top: 5px;
-		font-family: Papyrus;
+	#top-card-icon{
+		font-size: 48px;
+		color: white;
 	}
-	#flash-card{
+
+	#progress-bar{
+		font-size: smaller;
+	}
+
+	#increments{
+		background-color:orange;
+		color: white;
+		height: 90px;
 		margin-bottom: 5px;
+	}
+	#mentions{
+		background-color:forestgreen;
+		color: white;
+		height: 90px;
+		margin-bottom: 5px;
+	}
+	#download{
+		background-color:crimson;
+		color: white;
+		height: 90px;
+		margin-top: 5px;
+	}
+	#message{
+		background-color:cornflowerblue;
+		color: white;
+		height: 90px;
+		margin-top: 5px;
+	}
+
+	#social-card-opc{
+		height: 90px;
+	}
+	
+	#social-icon{
+		font-size:45px;
+	}
+
+	#social-cards{
+		height:90px;
+		text-align: left;
 	}
 	
 </style>
@@ -39,146 +87,190 @@
 
 	<body class="overflow-scroll">
 		<div id="page">
-
 			<h2>Dashboard</h2>
-			<div class="row"><!-- Top 4 Flash cards -->
-				<div class="col-sm-12 col-md-4 col-lg-3" id="flash-card">
+			<div class="row" id="top-flash-card"><!-- Top 4 cards -->
+				
+				<div class="col-sm-12 col-md-4 col-lg-3" id="top-flash-card">
 					<div class="card g-0">
 						<div class="row g-0" >
-							<div class="col-4 text-center" id="cpu">
-								<div class="mt-2"><i class="bi bi-cpu" style="font-size:48px; color:white;"></i></div>
+							<div class="col-3 text-center" id="cpu">
+								<div class="mt-2"><i class="bi bi-cpu" id="top-card-icon"></i></div>
 							</div>
-							<div class="col-8">
-								<div class="card-body">
-									<h5 class="card-title">CPU Traffic</h5>
-									<p class="card-text fw-bold">90 %</p>
+							<div class="col-9">
+								<div class="card-title ms-2">
+									<p class="card-text">CPU Traffic <br><b>90%</b></p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-sm-12 col-md-4 col-lg-3" id="flash-card">
+				<div class="col-sm-12 col-md-4 col-lg-3" id="top-flash-card">
 					<div class="card g-0">
 						<div class="row g-0 ">
-							<div class="col-4 text-center" id="likes">
-								<div class="mt-2"><i class="bi bi-heart" style="font-size:48px; color:white;"></i></div>
+							<div class="col-3 text-center" id="likes">
+								<div class="mt-2"><i class="bi bi-heart" id="top-card-icon"></i></div>
 							</div>
-							<div class="col-8">
-								<div class="card-body">
-									<h5 class="card-title">Likes</h5>
-									<p class="card-text">2 M</p>
+							<div class="col-9">
+								<div class="card-title ms-2">
+									<p class="card-text">Likes<br> <b>41,410</b></p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-sm-12 col-md-4 col-lg-3" id="flash-card">
+				<div class="col-sm-12 col-md-4 col-lg-3" id="top-flash-card">
 					<div class="card g-0">
 						<div class="row g-0">
-							<div class="col-4 text-center" id="sales">
-								<div class="mt-2"><i class="bi bi-cart2" style="font-size:48px; color:white;"></i></div>
+							<div class="col-3 text-center" id="sales">
+								<div class="mt-2"><i class="bi bi-cart2" id="top-card-icon"></i></div>
 							</div>
-							<div class="col-8">
-								<div class="card-body">
-									<h5 class="card-title">Sales</h5>
-									<p class="card-text">1.7 M</p>
+							<div class="col-9">
+								<div class="card-title ms-2">
+									<p class="card-text">Sales <br> <b>760</b></p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-sm-12 col-md-4 col-lg-3" id="flash-card">
+				<div class="col-sm-12 col-md-4 col-lg-3" id="top-flash-card">
 					<div class="card g-0">
 						<div class="row g-0">
-							<div class="col-4 text-center" id="member">
-								<div class="mt-2"><i class="bi bi-person-square" style="font-size:48px; color:white;"></i></div>
+							<div class="col-3 text-center" id="member">
+								<div class="mt-2"><i class="bi bi-person-square" id="top-card-icon"></i></div>
 							</div>
-							<div class="col-8">
-								<div class="card-body">
-									<h5 class="card-title">New Members</h5>
-									<p class="card-text">2 K</p>
+							<div class="col-9">
+								<div class="card-title ms-2">
+									<p class="card-text">New Members <br><b>2000</b></p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
-
-			<div class="row" style="margin-top: 20px;">  
-
-				<div class="col-sm-12 col-md-4 col-lg-3"></div>
-				<div class="col-sm-12 col-md-4 col-lg-6"></div>
-				<div class="col-sm-12 col-md-4 col-lg-3"> <!-- Progress bar-->
+  
+				<div class="col-sm-12 col-md-4 col-lg-3 mb-5"> <!-- Progress bar-->
 					<h6 class="text-center">Goal Compliation</h6>
-					<div style="margin-top: 10px;">
-						<label style="font-size: small;">Add Products to Cart</label>
-						<span class="position-absolute me-4 end-0" style="font-size: smaller;">300/600</span>
-						<div class="progress" style="height: 7px; margin-bottom:6 px;">
+					
+					<div id="progress-bar" >
+						<label>Add Products to Cart</label>
+						<div class="float-end"><label>300/600</label></div>
+						<div class="progress mb-2" style="height: 8px;">
 							<div class="progress-bar bg-info progress-bar-striped" role="progressbar" aria-valuenow="300" aria-valuemin="0" aria-valuemax="600" style="width:50%">
 							</div>
 			  			</div>
 					</div>
 					
-					<div style="margin-top: 10px;">
-						<label style="font-size: small;">Complete Purchase</label>
-						<span class="position-absolute me-4 end-0" style="font-size: smaller;">160/200</span>
-						<div class="progress" style="height:7px; margin-bottom: 6px;">
+					<div id="progress-bar">
+						<label>Complete Purchase</label>
+						<div class="float-end"><label>160/200</label></div>
+						<div class="progress mb-2" style="height:8px;">
 							<div class="progress-bar bg-danger progress-bar-striped" role="progressbar" aria-valuenow="160" aria-valuemin="0" aria-valuemax="200" style="width:80%">
 							</div>
 						</div>
 					</div>
 
-					<div style="margin-top: 10px;">
-						<label style="font-size: small;">Visit Home Page</label>
-						<span class="position-absolute me-4 end-0" style="font-size: smaller;">50/200</span>
-						<div class="progress" style="height: 7px;">
+					<div id="progress-bar">
+						<label>Visit Home Page</label>
+						<div class="float-end"><label>50/200</label></div>
+						<div class="progress mb-2" style="height: 8px;">
 							<div class="progress-bar bg-success progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="200" style="width:25%">
 							</div>
 			  			</div>
 					</div>
 
-					<div style="margin-top: 10px;">
-						<label style="font-size: small;">Send Queries</label>
-						<span class="position-absolute me-4 end-0" style="font-size: smaller;">70/100</span>
-						<div class="progress" style="height: 7px;">
+					<div id="progress-bar">
+						<label>Send Queries</label>
+						<div class="float-end"><label>700/100</label></div>
+						<div class="progress mb-2" style="height: 8px;">
 							<div class="progress-bar bg-warning progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
 							</div>
 						</div>
 					</div>
+
 				</div>
 
-			</div>
+				<div> <!-- cards for social activity-->
+					<div class="col-sm-12 col-md-4 col-lg-3">
+	
+						<div class="card g-0" id="increments">
+							<div class="row g-0">
+								<div id="social-card-opc" class="col-3 text-center mt-0 bg-black bg-opacity-10">
+									<div class="mt-2"><i class="bi bi-tag" id="social-icon"></i></div>
+								</div>
+								<div id="social-cards" class="col-9">
+									<div class="card-title">
+										<label class="ms-2">Increments<br>5,200</label>
+										<div class="progress bg-warning" style="height: 2px; width: inherit;">
+											<div class="progress-bar progress-bar bg-white" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+											</div>
+										</div>
+										<label class="ms-2">50% increase in 20 days</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card g-0" id="mentions">
+							<div class="row g-0">
+								<div id="social-card-opc" class="col-3 text-center mt-0 bg-black bg-opacity-10">
+									<div class="mt-2"><i class="bi bi-heart" id="social-icon"></i></div>
+								</div>
+								<div id="social-cards" class="col-9">
+									<div class="card-title">
+										<label class="ms-2">Mentions<br>92,050</label>
+										<div class="progress bg-success mb-2" style="height: 2px;">
+											<div class="progress-bar progress-bar bg-white" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+											</div>
+										</div>
+										<label class="ms-2">30% increase in 20 days</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card g-0" id="download">
+							<div class="row g-0">
+								<div id="social-card-opc" class="col-3 text-center bg-black bg-opacity-10">
+									<div class="mt-2"><i class="bi bi-cloud-download" id="social-icon"></i></div>
+								</div>
+								<div id="social-cards" class="col-9">
+									<div class="card-title">
+										<label class="ms-2">Downloads<br>1,96,050</label>
+										<div class="progress bg-danger" style="height: 2px;">
+											<div class="progress-bar progress-bar bg-white" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:32%">
+											</div>
+										</div>
+										<label class="ms-2">32% increase in 20 days</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card g-0" id="message">
+							<div class="row g-0">
+								<div id="social-card-opc" class="col-3 text-center bg-black bg-opacity-10">
+									<div class="mt-2"><i class="bi bi-chat" id="social-icon"></i></div>
+								</div>
+								<div id="social-cards" class="col-9">
+									<div class="card-title">
+										<label class="ms-2">Direct Message <br><b>1,64,987</b></label>
+										<div class="progress bg-primary" style="height: 2px;">
+											<div class="progress-bar progress-bar bg-white " role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:42%">
+											</div>
+										</div>
+										<label class="ms-2">42% increase in 20 days</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+				</div>
 		</div> 
 	</body>
 </html>
 
-<!--<div class="row">  
-		<div class="col-lg-4"></div>
-		<div class="col-lg-4"></div>
-		<div class="col-lg-4">
-			<canvas id="myChart" style="width: 100%; max-width: 600px"></canvas>
-			<script>
-				const xValues = ["Google","Fire-fox","Opera","Safari"];
-				const yValues = [ 55, 49, 44, 24 ];
-				const barColors = [ "#FFFF99", "#CCE5FF", "#E5FFCC", "#FFEBCD"];
-
-				new Chart("myChart", { type : "doughnut",
-					data : {
-						    labels   : xValues,
-						    datasets : [{
-								backgroundColor : barColors,
-								data : yValues 
-							}]
-					},
-					options : {
-						title : {
-							display : true,
-							text : "Browser Usage"
-							}
-					}
-				});
-			</script>
-		</div>-->
