@@ -3,7 +3,7 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 5px;  
-    font-family:Arial;
+    font-family:Georgia;
 }
 #top-flash-card{
     text-align: left;
@@ -16,7 +16,7 @@
     background-color:crimson;
 }
 #sales{
-    background-color:forestgreen;
+    background-color:green;
 }
 #member{
     background-color: orange;
@@ -37,7 +37,7 @@
     margin-bottom: 5px;
 }
 #mentions{
-    background-color:forestgreen;
+    background-color:green;
     color: white;
     height: 90px;
     margin-bottom: 5px;
@@ -68,14 +68,8 @@
     text-align: left;
 }
 
-#profile{
-    height: 97px;
-    width: 115px;
-}
-
 #profile-card{
-    height:120px;
-    width:95px;
+    height:105px;
     margin-bottom: 5px;
     margin-top: 5px;
 }

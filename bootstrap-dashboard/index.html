@@ -8,25 +8,24 @@
 		<link rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 		<link rel="stylesheet" href="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js">
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 		<link rel="stylesheet" href="dashboard.css">
 	</head>
 
 	<body class="overflow-scroll">
 		<div id="page">
 			<h2>Dashboard</h2>
+
 			<div class="row" id="top-flash-card"><!-- Top 4 cards -->
 
 				<div class="col-sm-12 col-md-4 col-lg-3" id="top-flash-card">
 					<div class="card g-0">
 						<div class="row g-0">
 							<div class="col-3 text-center" id="cpu">
-								<div class="mt-2"><i class="bi bi-cpu" id="top-card-icon"></i></div>
+								<div class="mt-2"><i class="bi bi-gear" id="top-card-icon"></i></div>
 							</div>
 							<div class="col-9">
 								<div class="card-title ms-2">
-									<p class="card-text">CPU Traffic <br><b>90%</b></p>
+									<p class="card-text mt-1">CPU Traffic <br><b>90%</b></p>
 								</div>
 							</div>
 						</div>
@@ -37,11 +36,12 @@
 					<div class="card g-0">
 						<div class="row g-0 ">
 							<div class="col-3 text-center" id="likes">
-								<div class="mt-2"><i class="bi bi-heart" id="top-card-icon"></i></div>
+								<div class="mt-2"><i class="bi bi-chat-square-heart"
+										id="top-card-icon"></i></div>
 							</div>
 							<div class="col-9">
 								<div class="card-title ms-2">
-									<p class="card-text">Likes<br> <b>41,410</b></p>
+									<p class="card-text mt-1">Likes<br> <b>41,410</b></p>
 								</div>
 							</div>
 						</div>
@@ -56,7 +56,7 @@
 							</div>
 							<div class="col-9">
 								<div class="card-title ms-2">
-									<p class="card-text">Sales <br> <b>760</b></p>
+									<p class="card-text mt-1">Sales <br> <b>760</b></p>
 								</div>
 							</div>
 						</div>
@@ -72,21 +72,21 @@
 							</div>
 							<div class="col-9">
 								<div class="card-title ms-2">
-									<p class="card-text">New Members <br><b>2000</b></p>
+									<p class="card-text mt-1">New Members <br><b>2000</b></p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-			</div>
+			</div><!--End of Top 4 cards -->
 
 			<div class="col-sm-12 col-md-4 col-lg-3 mb-5"> <!-- Progress bar-->
 				<h6 class="text-center">Goal Compliation</h6>
 
 				<div id="progress-bar">
 					<label>Add Products to Cart</label>
-					<div class="float-end"><label>300/600</label></div>
+					<div class="float-end"><label><b>300</b>/600</label></div>
 					<div class="progress mb-2" style="height: 8px;">
 						<div class="progress-bar bg-info progress-bar-striped" role="progressbar"
 							aria-valuenow="300" aria-valuemin="0" aria-valuemax="600"
@@ -97,7 +97,7 @@
 
 				<div id="progress-bar">
 					<label>Complete Purchase</label>
-					<div class="float-end"><label>160/200</label></div>
+					<div class="float-end"><label><b>160</b>/200</label></div>
 					<div class="progress mb-2" style="height:8px;">
 						<div class="progress-bar bg-danger progress-bar-striped"
 							role="progressbar" aria-valuenow="160" aria-valuemin="0"
@@ -108,7 +108,7 @@
 
 				<div id="progress-bar">
 					<label>Visit Home Page</label>
-					<div class="float-end"><label>50/200</label></div>
+					<div class="float-end"><label><b>50</b>/200</label></div>
 					<div class="progress mb-2" style="height: 8px;">
 						<div class="progress-bar bg-success progress-bar-striped"
 							role="progressbar" aria-valuenow="50" aria-valuemin="0"
@@ -119,7 +119,7 @@
 
 				<div id="progress-bar">
 					<label>Send Queries</label>
-					<div class="float-end"><label>700/100</label></div>
+					<div class="float-end"><label><b>700</b>/100</label></div>
 					<div class="progress mb-2" style="height: 8px;">
 						<div class="progress-bar bg-warning progress-bar-striped"
 							role="progressbar" aria-valuenow="70" aria-valuemin="0"
@@ -128,12 +128,13 @@
 					</div>
 				</div>
 
-			</div>
+			</div><!--End of Progress bar-->
 
 			<div class="row">
-				<div class="col-sm-12 col-md-4 col-lg-3"> <!-- cards for social activity-->
 
-					<div class="card g-0" id="increments">
+				<div class="col-sm-12 col-md-4 col-lg-3"><!-- cards for social activity-->
+
+					<div class="card g-0 mb-3" id="increments">
 						<div class="row g-0">
 							<div id="social-card-opc"
 								class="col-3 text-center mt-0 bg-black bg-opacity-10">
@@ -141,7 +142,7 @@
 							</div>
 							<div id="social-cards" class="col-9">
 								<div class="card-title">
-									<label class="ms-2">Increments<br>5,200</label>
+									<label class="ms-2 mt-1">Increments<br><b>5,200</b></label>
 									<div class="progress bg-warning mb-2"
 										style="height: 2px; width: inherit;">
 										<div class="progress-bar progress-bar bg-white" role="progressbar"
@@ -156,7 +157,7 @@
 						</div>
 					</div>
 
-					<div class="card g-0" id="mentions">
+					<div class="card g-0 mb-3" id="mentions">
 						<div class="row g-0">
 							<div id="social-card-opc"
 								class="col-3 text-center mt-0 bg-black bg-opacity-10">
@@ -164,7 +165,7 @@
 							</div>
 							<div id="social-cards" class="col-9">
 								<div class="card-title">
-									<label class="ms-2">Mentions<br>92,050</label>
+									<label class="ms-2 mt-1">Mentions<br><b>92,050</b></label>
 									<div class="progress bg-success mb-2" style="height: 2px;">
 										<div class="progress-bar progress-bar bg-white" role="progressbar"
 											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
@@ -178,7 +179,7 @@
 						</div>
 					</div>
 
-					<div class="card g-0" id="download">
+					<div class="card g-0 mb-3" id="download">
 						<div class="row g-0">
 							<div id="social-card-opc"
 								class="col-3 text-center bg-black bg-opacity-10">
@@ -187,7 +188,7 @@
 							</div>
 							<div id="social-cards" class="col-9">
 								<div class="card-title">
-									<label class="ms-2">Downloads<br>1,96,050</label>
+									<label class="ms-2 mt-1">Downloads<br><b>1,96,050</b></label>
 									<div class="progress bg-danger mb-2" style="height: 2px;">
 										<div class="progress-bar progress-bar bg-white" role="progressbar"
 											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
@@ -201,7 +202,7 @@
 						</div>
 					</div>
 
-					<div class="card g-0" id="message">
+					<div class="card g-0 mb-3" id="message">
 						<div class="row g-0">
 							<div id="social-card-opc"
 								class="col-3 text-center bg-black bg-opacity-10">
@@ -209,7 +210,7 @@
 							</div>
 							<div id="social-cards" class="col-9">
 								<div class="card-title">
-									<label class="ms-2">Direct Message <br><b>1,64,987</b></label>
+									<label class="ms-2 mt-1">Direct Message <br><b>1,64,987</b></label>
 									<div class="progress bg-primary mb-2" style="height: 2px;">
 										<div class="progress-bar progress-bar bg-white " role="progressbar"
 											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
@@ -222,23 +223,23 @@
 							</div>
 						</div>
 					</div>
+				</div><!--End of cards for social activity-->
 
-				</div>
-
-				<div class="col-sm-12 col-md-4 col-lg-4"> <!-- New Members cards-->
-					<div style="height:375px;">
-						<nav class="navbar navbar-expand-lg bg-light">
+				<div
+					class="col-sm-12 col-md-6 col-lg-4 shadow overflow-scroll ms-1 h-100"><!-- New Members cards-->
+					<div>
+						<nav class="navbar navbar-expand-lg border-bottom">
+							<!-- Top Navigation for Latest Members-->
 							<a class="navbar-brand">Latest Members</a>
-							<div class="ms-5">
-								<button class="btn btn-danger my-3 mt-1" type="submit"
+							<div class="ms-auto">
+								<button class="btn btn-danger mt-1" type="submit"
 									style="font-size: xx-small;">8 new member</button>
 								<i class="bi bi-dash ms-3"></i>
 								<i class="bi bi-x fw-medium ms-2"></i>
 							</div>
 						</nav>
-
-						<div class="row"> <!--row-1-->
-							<div class="card border-0 col-3" id="profile-card">
+						<div class="row col-12 ms-1 mt-3 me-2"> <!-- profile cards (8)-->
+							<div class="card border-0 col-3 col-sm-3" id="profile-card">
 								<img src="Pictures/image.png" class="img-fluid align-middle rounded"
 									id="profile">
 								<div class="card-text " style="font-size: small; text-align: center;">
@@ -247,7 +248,7 @@
 								</div>
 							</div>
 
-							<div class="card border-0 col-3" id="profile-card">
+							<div class="card border-0 col-3 col-sm-3" id="profile-card">
 								<img src="Pictures/profile.png"
 									class="img-fluid align-middle rounded-circle" id="profile">
 								<div class="card-text " style="font-size: small; text-align: center;">
@@ -256,7 +257,7 @@
 								</div>
 							</div>
 
-							<div class="card border-0 col-3" id="profile-card">
+							<div class="card border-0 col-3 col-sm-3" id="profile-card">
 								<img src="Pictures/profile2.jpeg"
 									class="img-fluid align-middle rounded-circle" id="profile">
 								<div class="card-text " style="font-size: small; text-align: center;">
@@ -265,7 +266,7 @@
 								</div>
 							</div>
 
-							<div class="card border-0 col-3" id="profile-card">
+							<div class="card border-0 col-3 col-sm-3" id="profile-card">
 								<img src="Pictures/images (3).png"
 									class="img-fluid align-middle rounded-circle" id="profile">
 								<div class="card-text " style="font-size: small; text-align: center;">
@@ -273,10 +274,8 @@
 									<label style="color: gray; margin-top: 0%;">12 Jan</label>
 								</div>
 							</div>
-						</div>
 
-						<div class="row"> <!--row-2-->
-							<div class="card border-0 col-3" id="profile-card">
+							<div class="card border-0 col-3 col-sm-3 mt-3" id="profile-card">
 								<img src="Pictures/images (2).png"
 									class="img-fluid align-middle rounded"
 									id="profile">
@@ -286,7 +285,7 @@
 								</div>
 							</div>
 
-							<div class="card border-0 col-3" id="profile-card">
+							<div class="card border-0 col-3 col-sm-3 mt-3" id="profile-card">
 								<img src="Pictures/images (1).png"
 									class="img-fluid align-middle rounded-circle" id="profile">
 								<div class="card-text " style="font-size: small; text-align: center;">
@@ -295,7 +294,7 @@
 								</div>
 							</div>
 
-							<div class="card border-0 col-3" id="profile-card">
+							<div class="card border-0 col-3 col-sm-3 mt-3" id="profile-card">
 								<img src="Pictures/images.jpeg"
 									class="img-fluid align-middle rounded-circle" id="profile">
 								<div class="card-text " style="font-size: small; text-align: center;">
@@ -304,7 +303,7 @@
 								</div>
 							</div>
 
-							<div class="card border-0 col-3" id="profile-card">
+							<div class="card border-0 col-3 col-sm-3 mt-3" id="profile-card">
 								<img src="Pictures/images.png"
 									class="img-fluid align-middle rounded-circle" id="profile">
 								<div class="card-text " style="font-size: small; text-align: center;">
@@ -312,16 +311,22 @@
 									<label style="color: gray; margin-top: 0%;">15 Jan</label>
 								</div>
 							</div>
-						</div>
-						<footer>
-							<div style="text-align: center;">
-								<label style="color:rgb(15, 113, 217); font-size:small;">View All User</label></div>
-						</footer>
-					</div>
+						</div> <!--End of profile cards (8)-->
 
-					<div class="col-sm-12 col-md-4 col-lg-5"></div>
+						<div class="mt-3 border-top" style="height: 45px;"> <!-- view all user-->
+							<div style="text-align: center; margin-top: 10px;">
+								<label style="color:rgb(15, 113, 217); font-size:medium;">View All
+									User</label>
+							</div>
+						</div><!-- End of view all user-->
+
+					</div><!--End od New Members cards-->
+				</div> <!--End of new Members card-->
+
+				<div class="col-sm-12 col-md-2 col-lg-5">
 				</div>
+
 			</div>
-		</div>
+		</div><!--End of Page id div-->
 	</body>
 </html>
