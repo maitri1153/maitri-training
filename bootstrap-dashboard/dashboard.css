@@ -67,7 +67,10 @@
     height:90px;
     text-align: left;
 }
-
+#profile{
+    height: auto;
+    width: auto;
+}
 #profile-card{
     height:105px;
     margin-bottom: 5px;
