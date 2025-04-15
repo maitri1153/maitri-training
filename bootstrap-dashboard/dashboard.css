@@ -121,3 +121,27 @@
     border-right-color: transparent;
     border-left-color: #ffce44;
 }
+
+#product{
+    height: 50px;
+    width: 50px;
+}
+
+#product-name{
+    color:rgba(12, 126, 241, 0.819); 
+    font-size: small;
+}
+
+#product-detail{
+    color: rgb(93, 97, 97);
+    font-size: xx-small;
+}
+
+#product-btn{
+    color: white;
+    height: 16px;
+    width: 40px;
+    font-size: xx-small;
+    text-align: center;
+    padding-top:5px;
+}
