@@ -16,7 +16,7 @@
 			<h2>Dashboard</h2>
 
 			<!-- Top 4 cards -->
-			<div class="row ms-1" id="top-flash-card">
+			<div class="row" id="top-flash-card">
 
 				<div class="col-sm-12 col-md-4 col-lg-3" id="top-flash-card">
 					<div class="card g-0">
@@ -84,7 +84,7 @@
 			<!--End of Top 4 cards -->
 
 			<!-- Progress bar-->
-			<div class="col-sm-12 col-md-3 col-lg-3 mb-5 ms-2">
+			<div class="col-sm-12 col-md-3 col-lg-3 mb-5">
 				<h6 class="text-center">Goal Compliation</h6>
 
 				<div id="progress-bar">
@@ -138,7 +138,7 @@
 			<div class="row">
 
 				<!-- cards for social activity-->
-				<div class="col-sm-12 col-md-4 col-lg-4 me-3 ms-2 shadow h-100">
+				<div class="col-sm-12 col-md-4 col-lg-4 me-3 h-100">
 
 					<div class="card g-0 mb-3 mt-1" id="increments">
 						<div class="row g-0">
@@ -233,7 +233,7 @@
 				<!--End of cards for social activity-->
 
 				<!-- New Members cards-->
-				<div class="col-sm-11 col-md-6 col-lg-3 shadow h-100  me-5 mt-5 ms-2">
+				<div class="col-sm-11 col-md-6 col-lg-3 shadow h-100  me-5 mt-2">
 
 					<!-- Top Navigation for Latest Members-->
 					<div class="card g-0 border-0 border-bottom" style="height: 40px;">
@@ -342,10 +342,10 @@
 				<!--End of new Members card-->
 
 				<!--Direct chat box-->
-				<div class="col-sm-12 col-md-6 col-lg-4 shadow overflow-y-scroll mt-2 ms-2"
+				<div class="col-sm-12 col-md-6 col-lg-4 shadow overflow-y-scroll mt-2"
 					id="chat-box">
 					<!-- Nav bar of Direct chat-->
-					<nav class="navbar navbar-expand-lg border-bottom" style="height:40px;">
+					<nav class="navbar navbar-expand-lg border-bottom" style="height:49px;">
 						<a class="navbar-brand">Direct Chat</a>
 						<div class="ms-auto text-muted">
 							<button class="btn btn-warning mt-1 rounded-5 text-white" type="submit"
@@ -441,18 +441,223 @@
 
 				</div>
 				<!--End of direct chat box-->
-			
+
 			</div>
 			<!--End of card, member, chat-->
 
 			<!--last row-->
 			<div class="row mt-5">
-				
-				<div class="col-sm-12 col-md-8 col-lg-7 shadow me-5 ms-2">
+
+				<!--Start of Latest order-->
+				<div class="col-sm-12 col-md-8 col-lg-7 shadow mb-4">
+
+					<!--Start of nav bar of Latest order-->
+					<div class="card g-0 border-0 border-bottom" style="height: 50px;">
+						<div class="row g-0 mt-3">
+							<div class="col-4 me-3">
+								<a class="navbar-brand ps-2 pt-2" style="font-size:large;">
+									Latest Order</a>
+							</div>
+							<div class="col-7 text-muted">
+								<i class="bi bi-x float-end ms-2"></i>
+								<i class="bi bi-dash float-end me-2"></i>
+							</div>
+						</div>
+					</div>
+					<!--End of nav bar of Latest Order-->
+
+					<!--Latest Order table-->
+					<div>
+						<table class="table">
+							<thread>
+								<tr>
+									<th>Order Id</th>
+									<th>Item</th>
+									<th>Status</th>
+									<th>Popularity</th>
+								</tr>
+							</thread>
+							<tbody>
+								<tr>
+									<td>OR9842</td>
+									<td>Call of Duty IV</td>
+									<td><label class="bg-success border-success"
+											id="order-status">shipped</label></td>
+									<td>
+										<span class="sparkline">
+											<span class="index"><span class="count"
+													style="height: 80%; background: green;"> 60,</span> </span>
+											<span class="index"><span class="count"
+													style="height: 85%;  background: green;">220,</span> </span>
+											<span class="index"><span class="count"
+													style="height: 79%;  background: green;">140,</span> </span>
+											<span class="index"><span class="count-down"
+													style="height: 65%;">80,</span> </span>
+											<span class="index"><span class="count"
+													style="height: 49%; background: green;">110,</span> </span>
+											<span class="index"><span class="count-down"
+													style="height: 79%;">90,</span> </span>
+											<span class="index"><span class="count"
+													style="height: 49%;  background: green;">110,</span> </span>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td>OR1848</td>
+									<td>Samsung Smart TV</td>
+									<td><label class="bg-warning border-warning"
+											id="order-status">Pending</label></td>
+									<td>
+										<span class="sparkline">
+											<span class="index"><span class="count"
+													style="height: 89%; background:orange;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 80%;  background: orange;"></span> </span>
+											<span class="index"><span class="count-down"
+													style="height: 79%;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 75%; background:orange;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 70%; background: orange;"></span> </span>
+											<span class="index"><span class="count-down"
+													style="height: 79%;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 69%;  background: orange;"></span> </span>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td>OR7429</td>
+									<td>iPhone 6 Plus</td>
+									<td><label class="bg-danger border-danger"
+											id="order-status">Delivered</label></td>
+									<td>
+										<span class="sparkline">
+											<span class="index"><span class="count"
+													style="height: 80%; background: crimson;"></span> </span>
+											<span class="index"><span class="count-down"
+													style="height: 75%;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 79%;  background:crimson;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 65%; background: crimson;"></span> </span>
+											<span class="index"><span class="count-down"
+													style="height: 49%;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 79%; background: crimson;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 49%;  background: crimson;"></span> </span>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td>OR7429</td>
+									<td>Samsung Smart TV</td>
+									<td><label class="bg-primary border-primary"
+											id="order-status">Processing</label></td>
+									<td>
+										<span class="sparkline">
+											<span class="index"><span class="count"
+													style="height: 85%; background: rgb(65, 146, 239);"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 80%; background: rgb(65, 146, 239);"></span> </span>
+											<span class="index"><span class="count-down"
+													style="height: 89%;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 65%; background: rgb(65, 146, 239)"></span> </span>
+											<span class="index"><span class="count-down"
+													style="height: 79%;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 79%; background: rgb(65, 146, 239);"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 49%; background: rgb(65, 146, 239);"></span> </span>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td>OR1848</td>
+									<td>Samsung Smart TV</td>
+									<td><label class="bg-warning border-warning"
+											id="order-status">Pending</label></td>
+									<td>
+										<span class="sparkline">
+											<span class="index"><span class="count"
+													style="height: 89%; background:orange;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 80%;  background: orange;"></span> </span>
+											<span class="index"><span class="count-down"
+													style="height: 79%;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 75%; background:orange;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 70%; background: orange;"></span> </span>
+											<span class="index"><span class="count-down"
+													style="height: 79%;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 69%;  background: orange;"></span> </span>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td>OR7429</td>
+									<td>iPhone 6 Plus</td>
+									<td><label class="bg-danger border-danger"
+											id="order-status">Delivered</label></td>
+									<td>
+										<span class="sparkline">
+											<span class="index"><span class="count"
+													style="height: 80%; background: crimson;"></span> </span>
+											<span class="index"><span class="count-down"
+													style="height: 75%;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 79%;  background:crimson;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 65%; background: crimson;"></span> </span>
+											<span class="index"><span class="count-down"
+													style="height: 49%;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 79%; background: crimson;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 49%;  background: crimson;"></span> </span>
+										</span>
+									</td>
+								</tr>
+								<tr>
+									<td>OR9842</td>
+									<td>Call of Duty IV</td>
+									<td><label class="bg-success border-success"
+											id="order-status">shipped</label></td>
+									<td>
+										<span class="sparkline">
+											<span class="index"><span class="count"
+													style="height: 80%; background: green;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 85%;  background: green;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 79%;  background: green;"></span> </span>
+											<span class="index"><span class="count-down"
+													style="height: 65%;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 49%; background: green;"></span> </span>
+											<span class="index"><span class="count-down"
+													style="height: 79%;"></span> </span>
+											<span class="index"><span class="count"
+													style="height: 49%;  background: green;"></span> </span>
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<button class="bg-primary border-primary mb-3" id="order-status"
+							style="height: 30px;"> Place New Order</button>
+					</div>
+					<!--End od Latest order table-->
 				</div>
+				<!--End of Order List-->
 
 				<!--Product List-->
-				<div class="col-sm-12 col-md-5 col-lg-3 shadow ms-2 ms-lg-4">
+				<div class="col-sm-12 col-md-5 col-lg-3 shadow ms-lg-4">
 
 					<!--Start of nav bar of products-->
 					<div class="card g-0 border-0 border-bottom" style="height: 50px;">
@@ -500,7 +705,7 @@
 										<label class="pt-2 float-end bg-primary border-primary rounded-1"
 											id="product-btn"><b>$700</b></label><br>
 										<label class="pt-3 ps-2" id="product-detail">26" Mongoose Dolomite
-											Men's 7speed Navy Blue..</label>
+											Men's 7-speed,Navy Blue..</label>
 									</div>
 								</div>
 							</div>
@@ -517,7 +722,7 @@
 										<label class="pt-2 float-end bg-danger border-danger rounded-1"
 											id="product-btn"><b>$350</b></label><br>
 										<label class="pt-3 ps-2" id="product-detail">Xbox One Console Bundle
-											with Halo master chief..</label>
+											with Halo master chief Coll..</label>
 									</div>
 								</div>
 							</div>
