@@ -1,9 +1,9 @@
 #page {
     margin-bottom: 50px;
     margin-left: 20px;
-    margin-right: 15px;
+    margin-right: 20px;
     margin-top: 5px;
-    font-family: Verdana;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #top-flash-card {
@@ -78,7 +78,11 @@
 }
 
 #chat-box {
-    height: 450px;
+    height: 400px;
+}
+
+#profile-div {
+    height: 400px;
 }
 
 .direct-chat-text {
@@ -122,43 +126,60 @@
     border-left-color: #ffce44;
 }
 
-#product{
+#product {
     height: 50px;
     width: 50px;
 }
 
-#product-name{
-    color:rgba(12, 126, 241, 0.819); 
+#product-name {
+    color: rgba(12, 126, 241, 0.819);
     font-size: small;
 }
 
-#product-detail{
+#product-detail {
     color: rgb(93, 97, 97);
     font-size: x-small;
 }
 
-#product-btn{
+#product-btn {
     color: white;
     height: 16px;
     width: 40px;
-    font-size: xx-small;
+    font-size: small;
     text-align: center;
-    padding-top:5px;
+    padding-top: 5px;
 }
 
-#order-status{
+#order-status {
     color: white;
-    font-size:10px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    font-size: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 2px;
 }
-.table.td{
+
+#view-all-btn{
+    background-color:rgb(234 234 234);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 2px;
+}
+
+#product-div{
+    height:450px;
+}
+#order-id{
+    color: blue;
+}
+
+.table.td {
     font-size: 5px;
-    letter-spacing:-5px;
-    font-family:papyrus;
+    letter-spacing: -5px;
+    font-family: papyrus;
 }
 
 .sparklist {
@@ -166,56 +187,101 @@
     width: 100%;
     margin: 0;
     padding: 0;
-  }
-  
-  .sparkline { 
+}
+
+.sparkline {
     display: inline-block;
     height: 1em;
     margin: 0 0.6em;
-  }
-  
-  .sparkline .index { 
+}
+
+.sparkline .index {
     position: relative;
-    float: left; 
-    width: 7px; 
-    height: 1em; 
-  }
-  
-  .sparkline .index .count-success { 
-    display: block; 
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    width: 85%; 
-    height: 0; 
+    float: left;
+    width: 7px;
+    height: 1em;
+}
+
+.sparkline .index .count-success {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85%;
+    height: 0;
     background: green;
     font: 0/0 a;
     text-shadow: none;
     color: transparent;
-  }
+}
 
-  .sparkline .index .count{ 
-    display: block; 
-    position: absolute; 
-    bottom: 0; 
-    left: 0; 
-    width: 85%; 
-    height: 0; 
+.sparkline .index .count {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 85%;
+    height: 0;
     font: 0/0 a;
     text-shadow: none;
     color: transparent;
-  }
-  .sparkline .index .count-down { 
-    display: block; 
-    position: relative; 
-    bottom: -15px;; 
-    left: 0; 
-    width: 85%; 
-    height: 0; 
-    background:crimson;
+}
+
+.sparkline .index .count-down {
+    display: block;
+    position: relative;
+    bottom: -15px;
+    ;
+    left: 0;
+    width: 85%;
+    height: 0;
+    background: crimson;
     font: 0/0 a;
     text-shadow: none;
     color: transparent;
-  }
+}
 
+button {
+    background: transparent;
+    border:white;
+}
 
+#nav {
+    position: absolute;
+    border-right: solid 1px black;
+    z-index: 999;
+    background: black;
+    width: 300px;
+    height: 100vh;
+    overflow-y: auto;
+    transition-property: transform;
+    transition-duration: .4s;
+    transform: translateX(-320px);
+    cursor: pointer;
+}
+
+#nav.open {
+    transform: translateX(0);
+}
+
+li {
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: monospace;
+    color: white;
+    padding-left: 10px;
+}
+
+#profile-nav{
+    height: 30px;
+    width: 30px;
+    border-radius: 40px;
+}
+
+#icons{
+    float: end;
+}
+
+#nav-rigth{
+    margin-left: auto;
+}
