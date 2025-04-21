@@ -27,6 +27,9 @@ public class EditServlet extends HttpServlet {
 			logger.info("Startrd EditServlet");
 			int edit_id = Integer.parseInt(request.getParameter(EmployeeConstant.EDIT_ID));
 			Employee employee = EmployeeDAO.getEmployee(edit_id);
+			request.setAttribute("isDancing",employee.getHobby().contains("Dancing"));
+			request.setAttribute("isSinging",employee.getHobby().contains("Singing"));
+			request.setAttribute("isPainting",employee.getHobby().contains("Painting"));
 			request.setAttribute(EmployeeConstant.EMPLOYEE, employee);
 			request.getRequestDispatcher("register.jsp").forward(request, response);
 		} catch (Exception e) {
