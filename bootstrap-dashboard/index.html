@@ -22,7 +22,7 @@
         </script>
     </head>
     <body>
-        <nav class="navbar bg-primary navbar-expand"
+        <nav class="navbar bg-primary navbar-expand fixed-top w-100"
             style="height:40px; color: white;">
             <div class="ms-lg-3 ms-md-3 ms-1 me-lg-5">
                 <label id="logo" class="text-white navbar-brand">AdminLTE</label>
@@ -48,15 +48,15 @@
 
                 <img src="Pictures/alexandar.jpeg" id="profile-nav"
                     class="ms-lg-3 ms-sm-3 ms-2">
-                <label style="color: white; font-size: x-small;"
-                    class="navbar-text ms-lg-1"><b>Alexzander Pierce</b></label>
+                <label style="color: white; font-size: x-small;" 
+                    class="navbar-text ms-lg-1 d-md-inline d-none d-lg-inline"><b>Alexzander Pierce</b></label>
                 <i
-                    class="bi bi-gear text-white me-lg-2 ms-lg-3 me-md-3 pt-5"></i>
+                    class="bi bi-gear text-white ms-2 me-2 pt-5"></i>
             </div>
 
         </nav>
 
-        <nav id="nav">
+        <nav id="nav" class="position-fixed">
 
             <!--start of profile of user-->
             <div class="card g-0 mt-3 bg-black">
@@ -170,15 +170,15 @@
         </nav>
 
         <div id="page">
-			<h5 style="font-weight:400">Dashboard</h5>
+			<h5 style="font-weight:400" class="pt-3">Dashboard</h5>
 
 			<!-- Top 4 cards -->
-			<div class="row">
+			<div class="row g-4">
 
-				<div class="col-sm-12 col-md-4 col-lg-3" id="top-flash-card">
-					<div class="card g-0">
-						<div class="row g-0" >
-							<div class="col-3 text-center" id="cpu">
+				<div class="col-sm-12 col-md-4 col-lg-3 " id="top-flash-card">
+					<div class="card g-0 rounded-1" style="height: 80px;">
+						<div class="row g-0 h-100">
+							<div class="col-3 text-center rounded-start-1" id="cpu">
 								<div class="h-100 align-content-center justify-content-center"><i class="bi bi-gear" id="top-card-icon"></i></div>
 							</div>
 							<div class="col-9">
@@ -191,9 +191,9 @@
 				</div>
 
 				<div class="col-sm-12 col-md-4 col-lg-3" id="top-flash-card">
-					<div class="card g-0">
-						<div class="row g-0 ">
-							<div class="col-3 text-center" id="likes">
+					<div class="card g-0 rounded-1" style="height: 80px;">
+						<div class="row g-0 h-100">
+							<div class="col-3 text-center rounded-start-1" id="likes">
 								<div class="h-100 align-content-center justify-content-center"><i class="bi bi-chat-square-heart"
 										id="top-card-icon"></i></div>
 							</div>
@@ -207,9 +207,9 @@
 				</div>
 
 				<div class="col-sm-12 col-md-4 col-lg-3" id="top-flash-card">
-					<div class="card g-0">
-						<div class="row g-0">
-							<div class="col-3 text-center" id="sales">
+					<div class="card g-0 rounded-1" style="height: 80px;">
+						<div class="row g-0 h-100">
+							<div class="col-3 text-center rounded-start-1" id="sales">
 								<div class="h-100 align-content-center justify-content-center"><i class="bi bi-cart2" id="top-card-icon"></i></div>
 							</div>
 							<div class="col-9">
@@ -222,9 +222,9 @@
 				</div>
 
 				<div class="col-sm-12 col-md-4 col-lg-3" id="top-flash-card">
-					<div class="card g-0">
-						<div class="row g-0">
-							<div class="col-3 text-center" id="member">
+					<div class="card g-0 rounded-1" style="height: 80px;">
+						<div class="row g-0 h-100">
+							<div class="col-3 text-center rounded-start-1" id="member">
 								<div class="h-100 align-content-center justify-content-center"><i class="bi bi-person-square"
 										id="top-card-icon"></i></div>
 							</div>
@@ -242,7 +242,7 @@
 
 			<!-- Progress bar-->
 			<div class="col-sm-12 col-md-3 col-lg-3">
-				<h6 class="text-center mt-3">Goal Compliation</h6>
+				<h6 class="text-center mt-5">Goal Compliation</h6>
 
 				<div id="progress-bar"  style="margin-top: 10px;">
 					<label>Add Products to Cart</label>
@@ -292,7 +292,7 @@
 			<!--End of Progress bar-->
 
 			<!--Start of card, member, chat-->
-			<div class="row mt-4 g-xl-5">
+			<div class="row g-5 mt-5">
 
 				<!-- cards for social activity-->
 				<div class="col-sm-10 col-md-5 col-lg-4">
@@ -390,7 +390,7 @@
 				<!--End of cards for social activity-->
 
 				<!-- New Members cards-->
-				<div class="col-sm-6 col-md-5 col-lg-4 shadow overflow-auto "
+				<div class="col-sm-6 col-md-5 col-lg-4 shadow"
 					id="profile-div">
 
 					<!-- Top Navigation for Latest Members-->
@@ -407,11 +407,11 @@
 					<!--End of Nav bar of profile cards-->
 
 					<!-- profile cards (8)-->
-					<div class="row col-sm-12 ms-1 mt-4 mb-3">
+					<div class="row col-sm-12 ms-1 mt-3">
 
 						<div class="card border-0 col-3 col-sm-3" id="profile-card">
-							<img src="Pictures/alexandar.jpeg" class="img-fluid align-middle rounded">
-							<div class="card-text" style="font-size: small;">
+							<img src="Pictures/alexandar.jpeg" class="img-fluid align-middle rounded-circle">
+							<div class="card-text" style="font-size: small; text-align: center;">
 								<label><b>Alexandar</b></label><br>
 								<label style="color: gray; margin-top: 0%;">Today</label>
 							</div>
@@ -444,7 +444,7 @@
 							</div>
 						</div>
 
-						<div class="card border-0 col-3 col-sm-3 mt-5" id="profile-card">
+						<div class="card border-0 col-3 col-sm-3 mt-lg-3 mt-5" id="profile-card">
 							<img src="Pictures/jesica.jpeg"
 								class="img-fluid align-middle rounded-circle">
 							<div class="card-text" style="font-size: small; text-align: center;">
@@ -453,7 +453,7 @@
 							</div>
 						</div>
 
-						<div class="card border-0 col-3 col-sm-3 mt-5" id="profile-card">
+						<div class="card border-0 col-3 col-sm-3  mt-lg-3 mt-5" id="profile-card">
 							<img src="Pictures/sarah.jpeg"
 								class="img-fluid align-middle rounded-circle">
 							<div class="card-text " style="font-size: small; text-align: center;">
@@ -462,7 +462,7 @@
 							</div>
 						</div>
 
-						<div class="card border-0 col-3 col-sm-3 mt-5" id="profile-card">
+						<div class="card border-0 col-3 col-sm-3  mt-lg-3 mt-5" id="profile-card">
 							<img src="Pictures/nora.jpeg"
 								class="img-fluid align-middle rounded-circle">
 							<div class="card-text" style="font-size: small; text-align: center;">
@@ -471,7 +471,7 @@
 							</div>
 						</div>
 
-						<div class="card border-0 col-3 col-sm-3 mt-5" id="profile-card">
+						<div class="card border-0 col-3 col-sm-3  mt-lg-3 mt-5" id="profile-card">
 							<img src="Pictures/nadia.jpeg"
 								class="img-fluid align-middle rounded-circle">
 							<div class="card-text" style="font-size: small; text-align: center;">
@@ -483,8 +483,8 @@
 					<!--End of profile cards (8)-->
 
 					<!-- view all user-->
-					<div class="border-top mt-4" style="height: fit-content;">
-						<div style="text-align: center;" class="mt-2">
+					<div class="border-top mt-4 mt-lg-4">
+						<div class="text-center align-middle mt-2 mt-lg-3" >
 							<label style="color:rgb(15, 113, 217); font-size:14px;">View All
 								User</label>
 						</div>
@@ -605,11 +605,11 @@
 			<div class="row mt-3">
 
 				<!--Start of Latest order-->
-				<div class="col-sm-12 col-md-8 col-lg-8 shadow mb-2 ">
+				<div class="col-sm-12 col-md-8 col-lg-8 shadow mb-2">
 
 					<!--Start of nav bar of Latest order-->
 					<nav class="navbar navbar-expand-lg border-bottom" style="height:49px;">
-						<a class="navbar-brand" style="font-size:x-large;">Latest Order</a>
+						<a class="navbar-brand" style="font-size:larger;">Latest Order</a>
 						<div class="ms-auto text-muted">
 							<i class="bi bi-dash ms-2"></i>
 							<i class="bi bi-x ms-3"></i>
