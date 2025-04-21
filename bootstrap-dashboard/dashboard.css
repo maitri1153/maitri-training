@@ -78,12 +78,20 @@
     text-align: left;
 }
 
-#chat-box {
-    height: 400px;
+#chat-area {
+    height: 410px;
+    border-style:solid;
+    border-width:thin;
+    border-color: #8c8484;
 }
 
 #profile-div {
-    height: 400px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 410px;
+    border-style:solid;
+    border-width:thin;
+    border-color: #8c8484;
 }
 
 .direct-chat-text {
@@ -171,8 +179,25 @@
     border-radius: 2px;
 }
 
+#order-div{
+    padding-left: 5px;
+    padding-right: 5px;
+    border-style:solid;
+    border-width:thin;
+    border-color: #8c8484;
+}
+@media only screen and (max-width: 600px) {
+    #order-div {
+        font-size: small;
+    }
+  }
 #product-div{
+    padding-left: 5px;
+    padding-right: 5px;
     height:450px;
+    border-style:solid;
+    border-width:thin;
+    border-color: #8c8484;
 }
 #order-id{
     color: blue;
