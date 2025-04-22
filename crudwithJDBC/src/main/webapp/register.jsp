@@ -50,17 +50,13 @@
 			</div>
 			
 			<div class="form-group">
-			
-  			<label>Select hobby</label><br>
-
-  			<input type="checkbox" name="hobby" value="Dancing"
- 			${isDancing ? "checked" : ""}><label>Dancing</label><br>
-
-  			<input type="checkbox" name="hobby" value="Singing"
-  			 ${isSinging ? "checked" : ""} ><label>Singing</label><br>
-
-  			<input type="checkbox" name="hobby" value="Painting"
-    			${isDancing ? "checked" : ""}><label>Painting</label><br>
+  				<label>Select hobby</label><br>
+  				<input type="checkbox" name="hobby" value="Dancing"
+ 					${isDancing ? "checked" : ""}><label>Dancing</label><br>
+  				<input type="checkbox" name="hobby" value="Singing"
+  			 		${isSinging ? "checked" : ""} ><label>Singing</label><br>
+  				<input type="checkbox" name="hobby" value="Painting"
+    				${isPainting ? "checked" : ""}><label>Painting</label><br>
 			</div>			
 			<input type="submit" value="submit" class="btn btn-success">
 	</form>
