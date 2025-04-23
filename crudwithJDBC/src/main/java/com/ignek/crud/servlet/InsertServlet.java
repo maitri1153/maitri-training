@@ -39,16 +39,18 @@ public class InsertServlet extends HttpServlet {
 			String gender = request.getParameter(EmployeeConstant.GENDER);
 			String dob = request.getParameter(EmployeeConstant.DOB);
 			String[] hobbylist = request.getParameterValues(EmployeeConstant.HOBBY);
-			String hobby = Arrays.toString(hobbylist);
-			if (id.isBlank()) {
-				logger.info("Startrd insertEmployee function...");
-				Employee employee = new Employee(name, email, gender, dob, hobby);
-				EmployeeDAO.insertEmployee(employee);
-			} else{
-				logger.info("Startrd updateEMployee function...");
-				int emp_id = Integer.parseInt(request.getParameter(EmployeeConstant.ID));
-				Employee employee = new Employee(emp_id, name, email, gender, dob, hobby);
-				EmployeeDAO.updateEmployee(employee);
+			if(hobbylist.length!=0) {
+				String hobby = Arrays.toString(hobbylist);
+				if (id.isBlank()) {
+					logger.info("Startrd insertEmployee function...");
+					Employee employee = new Employee(name, email, gender, dob, hobby);
+					EmployeeDAO.insertEmployee(employee);
+				} else{
+					logger.info("Startrd updateEMployee function...");
+					int emp_id = Integer.parseInt(request.getParameter(EmployeeConstant.ID));
+					Employee employee = new Employee(emp_id, name, email, gender, dob, hobby);
+					EmployeeDAO.updateEmployee(employee);
+			}			
 			}
 		} catch (Exception e) {
 			logger.warn("Exception Occures in InsertServlet");
