@@ -369,3 +369,6 @@ button {
 #space{
     letter-spacing: -1px;
 }
+#line-space{
+    line-height:0;
+}
