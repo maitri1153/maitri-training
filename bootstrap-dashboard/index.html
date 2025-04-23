@@ -4,14 +4,24 @@
         <meta name="viewport" charset="UTF-8"
             content="width=device-width, initial-scale=1.0" />
         <title>Navigation</title>
-        <link rel="stylesheet"
-            href="bootstrap-5.3.5-dist/css/bootstrap.min.css">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-        			<script
-            href="bootstrap-5.3.5-dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="dashboard.css">
+       
+        	<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+			
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" 
+				rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
+				integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+				integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+				 integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        	<link rel="stylesheet" href="dashboard.css">
 
         <script>
             function toggle() {
@@ -24,36 +34,31 @@
 
     <body>
 		<!--top navigation-->
-        <nav class="navbar bg-primary navbar-expand fixed-top w-100"
-            style="height:40px; color: white;">
-            <div class="ms-lg-3 ms-md-3 ms-1 me-lg-5">
-                <label id="logo" class="text-white navbar-brand">AdminLTE</label>
-            </div>
-            
-            <button type="button" onClick="toggle()">
-                <span><i class="bi bi-list ms-lg-4 ms-md-4"
-                        style="color: white; font-size: larger;"></i></span>
-            </button>
-            <div style="margin-left: auto;">
+        <nav class="navbar bg-primary navbar-expand fixed-top w-100 text-white" id="nav-top">
+          
+			<div class="container-flex me-auto">
+				<div class="ps-3">
+					<label class="text-white navbar-brand h-100">AdminLTE</label>
+					<button type="button" onClick="toggle()">
+						<h4><i class="bi bi-list ms-lg-5 ms-md-5 text-white"></i></h4>
+					</button>
+				</div>
+			</div>
+
+            <div class="container-flex">
 
                 <i class="bi bi-envelope mt-4"></i>
-                <span class="bg-success rounded-1 ps-1 pe-1"
-                    style="font-size:8px; margin-left: -8px; position:absolute;">1</span>
+                <span class="bg-success rounded-1 ps-1 pe-1" id="count">1</span>
 
-                <i class="bi bi-bell ms-lg-3 ms-md-3 ms-1"></i>
-                <span class="bg-warning rounded-1 ps-1 pe-1"
-                    style="font-size:8px; margin-left: -10px; position:absolute;">3</span>
+                <i class="bi bi-bell ms-lg-3 ms-2"></i>
+                <span class="bg-warning rounded-1 ps-1 pe-1" id="count">3</span>
 
-                <i class="bi bi-flag ms-lg-3 ms-md-3 ms-1"></i>
-                <span class="bg-danger rounded-1 ps-1 pe-1"
-                    style="font-size:8px; margin-left: -8px; position:absolute;">2</span>
+                <i class="bi bi-flag ms-lg-3 ms-2">
+                <span class="bg-danger rounded-1 ps-1 pe-1" id="count">2</span></i>
 
-                <img src="Pictures/alexandar.jpeg" id="profile-nav"
-                    class="ms-lg-3 ms-sm-3 ms-2">
-                <label style="color: white; font-size: x-small;" 
-                    class="navbar-text ms-lg-1 d-md-inline d-none d-lg-inline"><b>Alexzander Pierce</b></label>
-                <i
-                    class="bi bi-gear text-white ms-2 me-2 pt-5"></i>
+                <img src="Pictures/alexandar.jpeg" id="profile-nav" class="ms-3">
+                <label class="ms-lg-1 d-md-inline d-none small">Alexzander Pierce</label>
+                <i class="bi bi-gear ms-2 me-2"></i>
             </div>
         </nav>
 		<!--End of top navigation-->
@@ -64,18 +69,16 @@
             <!--start of profile of user-->
             <div class="card g-0 mt-3 bg-black">
                 <div class="row g-0">
-                    <div class="col-3">
-                        <img src="Pictures/alexandar.jpeg" style="height:40px; width: 40px; border-radius: 20px;">
+                    <div class="col-3 ps-2">
+                        <img src="Pictures/alexandar.jpeg" class="rounded-circle" id="profile-sidenav">
                     </div>
-                    <div class="col-8 row g-0 ms-2 text-white"
-                        style="font-size: smaller;">
+                    <div class="col-8 row g-0 text-white small ps-2">
                         <label> Alexzander Pierce</label>
                         <div class="col-1">
-                            <div class="bg-success rounded-circle mt-2"
-                                style="height: 6px; width: 6px; background: forestgreen;"></div>
+                            <div class="bg-success rounded-circle mt-2" id="nav-status"></div>
                         </div>
                         <div class="col-8">
-                            <label style="font-size: x-small;">Online</label>
+                            <label id="font-smaller">Online</label>
                         </div>
                     </div>
                 </div>
@@ -83,64 +86,57 @@
             <!--End of profile of user-->
 
             <!--start of dashboard-->
-                <div class="dropdown pt-5"> 
-                    <button type="button" class="btn dropdown-toggle w-100 float-start mb-2 border-0" data-bs-toggle="dropdown" style="font-size: small; color: white;">
-                        <i class="bi bi-palette-fill float-start pe-2"></i>
-                        <label style="padding-right:55px;">Dashboard</label>
+                <div class="dropdown pt-5 text-white"> 
+                    <button type="button" class="dropdown-toggle w-100 mb-1 text-white" data-bs-toggle="dropdown">
+                        <i class="bi bi-palette-fill  float-start ps-1 pe-1"></i>
+                        <label class="me-5">Dashboard</label>
                     </button>
-                    <ul class="dropdown-menu w-100 bg-dark position-relative">
-                    <li>
-                        <a href="#" class="dropdown-item small" id="dropdown" style="display:flex;">
-                            <i class="bi bi-palette-fill float-start me-3"></i>
-                            Dashboard v1</a>
-                    </li>
-                    <li>
-                        <a href="#" class="dropdown-item small" id="dropdown" style="display:flex;">
-                            <i class="bi bi-palette-fill float-start me-3"></i>
-                            Dashboard v1</a>
-                    </li>
+                    <ul class="dropdown-menu w-100">
+                    	<li>
+                        	<a class="dropdown-item small" id="dropdown">
+                        	<i class="bi bi-palette-fill float-start me-3"></i>Dashboard v1</a>
+                    	</li>
+                    	<li>
+                    	    <a class="dropdown-item small" id="dropdown">
+                    	    <i class="bi bi-palette-fill float-start me-3"></i>Dashboard v1</a>
+                    	</li>
                     </ul>
                 </div>
                 <!--End of dashboard-->
 
                 <!--Start of Layout options-->
-                <div class="mt-5">
-                    <a class="nav-link " href="#" style="font-size: small; padding-left: 12px;">
+                <div class="mt-3">
+                    <a class="nav-link small ps-2">
                         <i class="bi bi-file-earmark me-3"></i> Layout options
-                        <span
-                            class="badge bg-primary ms-auto float-end me-3 mt-1">4</span>
+                        <span class="badge bg-primary flex-row float-end me-1">4</span>
                     </a>
                 </div>
                <!--End of Layout options-->
 
                <!--Start of widgets-->
-               <div>
-                <a class="nav-link  mt-4" href="#" style="font-size: small; padding-left: 12px;">
+               <div class="mt-3">
+                <a class="nav-link small ps-2">
                     <i class="bi bi-columns-gap me-3"></i> Widgets
-                    <span
-                        class="badge bg-success ms-auto float-end me-3 mt-1">new</span>
+                    <span class="badge bg-success flex-row float-end me-1">new</span>
                 </a>
                </div>
                <!--End of widgets-->
 
                <!--start of charts-->
-               <div class="dropdown pt-3"> 
-                <button type="button" class="w-100 btn btn-sm dropdown-toggle dropdown-toggle-split float-start border-0 " data-bs-toggle="dropdown" aria-expanded="false"
-                style="font-size: small; color: white;">
-                    <i class="bi bi-graph-up float-start ps-1 pe-1"></i>
-                    <label style="padding-right:87px;">Charts</label>
+               <div class="dropdown pt-3 text-white"> 
+                <button type="button" class="dropdown-toggle w-100 mb-1 text-white" data-bs-toggle="dropdown">
+                    <i class="bi bi-graph-up ps-1 pe-2 float-start"></i>
+                    <label class="me-5 pe-4">Charts</label>
                 </button>
-                <ul class="dropdown-menu w-100 bg-dark position-relative">
-                <li>
-                    <a href="#" class="dropdown-item small" id="dropdown" style="display:flex;">
-                        <i class="bi bi-graph-up float-start me-3"></i>
-                        chart v1</a>
-                </li>
-                <li>
-                    <a href="#" class="dropdown-item small" id="dropdown" style="display:flex;">
-                        <i class="bi bi-graph-up float-start me-3"></i>
-                        chart v1</a>
-                </li>
+                <ul class="dropdown-menu w-100">
+                	<li>
+                    	<a class="dropdown-item small" id="dropdown">
+                        <i class="bi bi-graph-up float-start me-3"></i>chart v1</a>
+                	</li>
+                	<li>
+                    	<a class="dropdown-item small" id="dropdown">
+                        <i class="bi bi-graph-up float-start me-3"></i>chart v1</a>
+                	</li>
                 </ul>
                 </div>
             <!--End of charts-->
@@ -148,22 +144,20 @@
 
             <!--start of UI Elements-->
             <div>
-                <div class="dropdown pt-3 mt-4"> 
-                    <button type="button" class="btn dropdown-toggle w-100 float-start mb-2 border-0" data-bs-toggle="dropdown" style="font-size: small; color: white;">
-                        <i class="bi bi-laptop float-start pe-2"></i>
-                        <label style="padding-right:55px;">UI Element</label>
+                <div class="dropdown pt-3"> 
+                    <button type="button" class="dropdown-toggle w-100  mb-1 text-white" data-bs-toggle="dropdown">
+                        <i class="bi bi-laptop float-start ps-1 pe-2"></i>
+                        <label class="me-3 pe-4">UI Element</label>
                     </button>
-                    <ul class="dropdown-menu w-100 bg-dark position-relative">
-                    <li>
-                        <a href="#" class="dropdown-item small" id="dropdown" style="display:flex;">
-                            <i class="bi bi-laptop float-start me-3"></i>
-                            UI Element v1</a>
-                    </li>
-                    <li>
-                        <a href="#" class="dropdown-item small" id="dropdown" style="display:flex;">
-                            <i class="bi bi-laptop float-start me-3"></i>
-                            UI Element v1</a>
-                    </li>
+                    <ul class="dropdown-menu w-100">
+                    	<li>
+                        	<a class="dropdown-item small" id="dropdown">
+                            <i class="bi bi-laptop float-start me-3"></i>UI Element v1</a>
+                    	</li>
+                    	<li>
+                        	<a class="dropdown-item small" id="dropdown">
+                            <i class="bi bi-laptop float-start me-3"></i>UI Element v1</a>
+                    	</li>
                     </ul>
                     </div>
             </div>
@@ -175,13 +169,13 @@
 
 		<!--Start of page content-->
         <div id="page">
-			<h5 style="font-weight:400" class="pt-3">Dashboard</h5>
+			<h5 class="pt-3">Dashboard</h5>
 
 			<!-- Top 4 cards -->
 			<div class="row g-4">
 
 				<div class="col-sm-12 col-md-4 col-lg-3 " id="top-flash-card">
-					<div class="card g-0 rounded-1" style="height: 80px;">
+					<div class="card g-0 rounded-1" id="card-hight">
 						<div class="row g-0 h-100">
 							<div class="col-3 text-center rounded-start-1" id="cpu">
 								<div class="h-100 align-content-center justify-content-center"><i class="bi bi-gear" id="top-card-icon"></i></div>
@@ -196,7 +190,7 @@
 				</div>
 
 				<div class="col-sm-12 col-md-4 col-lg-3" id="top-flash-card">
-					<div class="card g-0 rounded-1" style="height: 80px;">
+					<div class="card g-0 rounded-1" id="card-hight">
 						<div class="row g-0 h-100">
 							<div class="col-3 text-center rounded-start-1" id="likes">
 								<div class="h-100 align-content-center justify-content-center"><i class="bi bi-chat-square-heart"
@@ -212,7 +206,7 @@
 				</div>
 
 				<div class="col-sm-12 col-md-4 col-lg-3" id="top-flash-card">
-					<div class="card g-0 rounded-1" style="height: 80px;">
+					<div class="card g-0 rounded-1" id="card-hight">
 						<div class="row g-0 h-100">
 							<div class="col-3 text-center rounded-start-1" id="sales">
 								<div class="h-100 align-content-center justify-content-center"><i class="bi bi-cart2" id="top-card-icon"></i></div>
@@ -227,7 +221,7 @@
 				</div>
 
 				<div class="col-sm-12 col-md-4 col-lg-3" id="top-flash-card">
-					<div class="card g-0 rounded-1" style="height: 80px;">
+					<div class="card g-0 rounded-1" id="card-hight">
 						<div class="row g-0 h-100">
 							<div class="col-3 text-center rounded-start-1" id="member">
 								<div class="h-100 align-content-center justify-content-center"><i class="bi bi-person-square"
@@ -249,29 +243,27 @@
 			<div class="col-sm-12 col-md-3 col-lg-3">
 				<h6 class="text-center mt-5">Goal Compliation</h6>
 
-				<div id="progress-bar"  style="margin-top: 10px;">
+				<div id="progress-bar" class="small">
 					<label>Add Products to Cart</label>
 					<div class="float-end"><label><b>300</b>/600</label></div>
-					<div class="progress rounded-0" style="height: 8px;">
-						<div class="progress-bar bg-info progress-bar-striped" role="progressbar"
-							aria-valuenow="300" aria-valuemin="0" aria-valuemax="600"
-							style="width:50%">
+					<div class="progress rounded-0" id="progress-height">
+						<div class="progress-bar bg-info progress-bar-striped w-50" role="progressbar"
+							aria-valuenow="300" aria-valuemin="0" aria-valuemax="600">
 						</div>
 					</div>
 				</div>
 
-				<div id="progress-bar" style="margin-top: 10px;">
+				<div id="progress-bar" class="small pt-3">
 					<label>Complete Purchase</label>
 					<div class="float-end"><label><b>160</b>/200</label></div>
-					<div class="progress rounded-0" style="height:8px;">
-						<div class="progress-bar bg-danger progress-bar-striped"
-							role="progressbar" aria-valuenow="160" aria-valuemin="0"
-							aria-valuemax="200" style="width:80%">
+					<div class="progress rounded-0" id="progress-height">
+						<div class="progress-bar bg-danger progress-bar-striped w-75" role="progressbar" 
+							aria-valuenow="160" aria-valuemin="0" aria-valuemax="200">
 						</div>
 					</div>
 				</div>
 
-				<div id="progress-bar"  style="margin-top: 10px;">
+				<div id="progress-bar" class="small pt-3">
 					<label>Visit Home Page</label>
 					<div class="float-end"><label><b>50</b>/200</label></div>
 					<div class="progress rounded-0" style="height: 8px;">
