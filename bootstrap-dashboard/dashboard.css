@@ -272,7 +272,6 @@
     display: block;
     position: relative;
     bottom: -15px;
-    ;
     left: 0;
     width: 85%;
     height: 0;
@@ -349,7 +348,7 @@ button {
 #nav-status{
     height: 6px;
     width: 6px;
-    background:forestgreen;
+    background: forestgreen;
 }
 
 #font-smaller{
@@ -362,4 +361,11 @@ button {
 
 #progress-height{
    height: 9px; 
+}
+
+#line-height{
+    height: 2px;
+}
+#space{
+    letter-spacing: -1px;
 }

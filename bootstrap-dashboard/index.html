@@ -266,21 +266,19 @@
 				<div id="progress-bar" class="small pt-3">
 					<label>Visit Home Page</label>
 					<div class="float-end"><label><b>50</b>/200</label></div>
-					<div class="progress rounded-0" style="height: 8px;">
-						<div class="progress-bar bg-success progress-bar-striped"
-							role="progressbar" aria-valuenow="50" aria-valuemin="0"
-							aria-valuemax="200" style="width:25%">
+					<div class="progress rounded-0" id="progress-height">
+						<div class="progress-bar bg-success progress-bar-striped w-25" role="progressbar" 
+						aria-valuenow="50" aria-valuemin="0" aria-valuemax="200">
 						</div>
 					</div>
 				</div>
 
-				<div id="progress-bar"  style="margin-top: 10px;">
+				<div id="progress-bar" class="small pt-3">
 					<label>Send Queries</label>
-					<div class="float-end"><label><b>700</b>/100</label></div>
-					<div class="progress rounded-0" style="height: 8px;">
-						<div class="progress-bar bg-warning progress-bar-striped"
-							role="progressbar" aria-valuenow="70" aria-valuemin="0"
-							aria-valuemax="100" style="width:70%">
+					<div class="float-end"><label><b>700</b>/700</label></div>
+					<div class="progress rounded-0" id="progress-height">
+						<div class="progress-bar bg-warning progress-bar-striped w-100" role="progressbar" 
+						 aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
 						</div>
 					</div>
 				</div>
@@ -293,24 +291,24 @@
 
 				<!-- cards for social activity-->
 				<div class="col-sm-10 col-md-5 col-lg-4">
+					
 					<div class="card g-0 mb-3" id="increments">
 						<div class="row g-0">
-							<div id="social-card-opc"
-								class="col-3 text-center mt-0 bg-black bg-opacity-10">
-								<div class="mt-2"><i class="bi bi-tag" id="social-icon"></i></div>
+							<div id="social-card-opc" class="col-3 text-center mt-0 bg-black bg-opacity-10">
+								<div class="align-content-center h-100">
+									<i class="bi bi-tag" id="social-icon"></i>
+								</div>
 							</div>
 							<div id="social-cards" class="col-9">
 								<div class="card-title">
 									<label class="ms-2 mt-1">Increments<br><b>5,200</b></label>
-									<div class="progress bg-warning mb-2"
-										style="height: 2px; width: inherit;">
-										<div class="progress-bar progress-bar bg-white" role="progressbar"
-											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-											style="width:50%">
+									<div class="progress bg-warning mb-2" id="line-height">
+										<div class="progress-bar progress-bar bg-white w-50" role="progressbar"
+											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
 										</div>
 									</div>
-									<label class="ms-2" style="font-size: smaller;">50% increase in 20
-										days</label>
+									<label class=" ms-2 small">
+										50% increase in 20 days</label>
 								</div>
 							</div>
 						</div>
@@ -318,21 +316,21 @@
 
 					<div class="card g-0 mb-3" id="mentions">
 						<div class="row g-0">
-							<div id="social-card-opc"
-								class="col-3 text-center mt-0 bg-black bg-opacity-10">
-								<div class="mt-2"><i class="bi bi-heart" id="social-icon"></i></div>
+							<div id="social-card-opc" class="col-3 text-center bg-black bg-opacity-10">
+								<div class="align-content-center h-100">
+									<i class="bi bi-heart" id="social-icon"></i>
+								</div>
 							</div>
 							<div id="social-cards" class="col-9">
 								<div class="card-title">
 									<label class="ms-2 mt-1">Mentions<br><b>92,050</b></label>
-									<div class="progress bg-success mb-2" style="height: 2px;">
-										<div class="progress-bar progress-bar bg-white" role="progressbar"
-											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-											style="width:30%">
+									<div class="progress bg-success mb-2" id="line-height">
+										<div class="progress-bar progress-bar bg-white w-25" role="progressbar"
+											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
 										</div>
 									</div>
-									<label class="ms-2" style="font-size: smaller;">30% increase in 20
-										days</label>
+									<label class="ms-2 small">
+										30% increase in 20 days</label>
 								</div>
 							</div>
 						</div>
@@ -340,22 +338,21 @@
 
 					<div class="card g-0 mb-3" id="download">
 						<div class="row g-0">
-							<div id="social-card-opc"
-								class="col-3 text-center bg-black bg-opacity-10">
-								<div class="mt-2"><i class="bi bi-cloud-download"
-										id="social-icon"></i></div>
+							<div id="social-card-opc" class="col-3 text-center bg-black bg-opacity-10">
+								<div class="h-100 align-content-center">
+									<i class="bi bi-cloud-download"id="social-icon"></i>
+								</div>
 							</div>
 							<div id="social-cards" class="col-9">
 								<div class="card-title">
 									<label class="ms-2 mt-1">Downloads<br><b>1,96,050</b></label>
-									<div class="progress bg-danger mb-2" style="height: 2px;">
-										<div class="progress-bar progress-bar bg-white" role="progressbar"
-											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-											style="width:32%">
+									<div class="progress bg-danger mb-2" id="line-height">
+										<div class="progress-bar progress-bar bg-white w-75" role="progressbar"
+											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
 										</div>
 									</div>
-									<label class="ms-2" style="font-size: smaller;">32% increase in 20
-										days</label>
+									<label class="ms-2 small">
+										32% increase in 20 days</label>
 								</div>
 							</div>
 						</div>
@@ -363,21 +360,21 @@
 
 					<div class="card g-0 mb-3" id="message">
 						<div class="row g-0">
-							<div id="social-card-opc"
-								class="col-3 text-center bg-black bg-opacity-10">
-								<div class="mt-2"><i class="bi bi-chat" id="social-icon"></i></div>
+							<div id="social-card-opc" class="col-3 text-center bg-black bg-opacity-10">
+								<div class="align-content-center h-100">
+									<i class="bi bi-chat" id="social-icon"></i>
+								</div>
 							</div>
 							<div id="social-cards" class="col-9">
 								<div class="card-title">
 									<label class="ms-2 mt-1">Direct Message <br><b>1,64,987</b></label>
-									<div class="progress bg-primary mb-2" style="height: 2px;">
-										<div class="progress-bar progress-bar bg-white " role="progressbar"
-											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-											style="width:42%">
+									<div class="progress bg-primary mb-2" id="line-height">
+										<div class="progress-bar progress-bar bg-white w-75" role="progressbar"
+											aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
 										</div>
 									</div>
-									<label class="ms-2" style="font-size: smaller;">42% increase in 20
-										days</label>
+									<label class="ms-2 small">
+										42% increase in 20 days</label>
 								</div>
 							</div>
 						</div>
@@ -387,14 +384,16 @@
 
 				<!-- New Members cards-->
 				<div class="col-sm-6 col-md-6 col-lg-4">
+					
 					<div id="profile-div">
 					<!-- Top Navigation for Latest Members-->
-					<nav class="navbar navbar-expand-lg border-bottom ps-1 pe-2" >
-						<a class="navbar-brand" style="font-size:large;">Latest Members</a>
-						<div class="ms-auto text-muted">
-							<button class="btn btn-danger" type="submit"
-								style="font-size:x-small; padding-top:2px; width:95px;">8
-								new member</button>
+					<nav class="navbar navbar-expand-lg border-bottom" >
+						<div class="flex-container me-auto">
+							<a class="navbar-brand">Latest Members</a>
+						</div>
+						<div class="flex-container">
+							<button class="btn btn-danger h-auto w-auto" id="font-smaller" type="submit">
+								8 new member</button>
 							<i class="bi bi-dash"></i>
 							<i class="bi bi-x"></i>
 						</div>
@@ -406,72 +405,65 @@
 
 						<div class="card border-0 col-3 col-sm-3" id="profile-card">
 							<img src="Pictures/alexandar.jpeg" class="img-fluid align-middle rounded-circle">
-							<div class="card-text" style="font-size: small; text-align: center;">
+							<div class="card-text small text-center">
 								<label><b>Alexandar</b></label><br>
-								<label style="color: gray; margin-top: 0%;">Today</label>
+								<label class="text-muted">Today</label>
 							</div>
 						</div>
 
 						<div class="card border-0 col-3 col-sm-3" id="profile-card">
-							<img src="Pictures/norman.jpeg"
-								class="img-fluid align-middle rounded-circle">
-							<div class="card-text " style="font-size: small; text-align: center;">
+							<img src="Pictures/norman.jpeg" class="img-fluid align-middle rounded-circle">
+							<div class="card-text small text-center">
 								<label><b>Norman</b></label><br>
-								<label style="color: gray; margin-top: 0%;">11 June</label>
+								<label class="text-muted">11 June</label>
 							</div>
 						</div>
 
 						<div class="card border-0 col-3 col-sm-3" id="profile-card">
-							<img src="Pictures/jane.jpeg"
-								class="img-fluid align-middle rounded-circle">
-							<div class="card-text" style="font-size: small; text-align: center;">
+							<img src="Pictures/jane.jpeg" class="img-fluid align-middle rounded-circle">
+							<div class="card-text small text-center">
 								<label><b>Jane</b></label><br>
-								<label style="color: gray; margin-top: 0%;">12 June</label>
+								<label class="text-muted">12 June</label>
 							</div>
 						</div>
 
 						<div class="card border-0 col-3 col-sm-3" id="profile-card">
-							<img src="Pictures/John.jpeg"
-								class="img-fluid align-middle rounded-circle">
-							<div class="card-text" style="font-size: small; text-align: center">
+							<img src="Pictures/John.jpeg" class="img-fluid align-middle rounded-circle">
+							<div class="card-text small text-center">
 								<label><b>John</b></label><br>
-								<label style="color: gray; margin-top: 0%;">12 Jan</label>
+								<label class="text-muted">12 Jan</label>
 							</div>
 						</div>
 
 						<div class="card border-0 col-3 col-sm-3  mt-3 mt-lg-3" id="profile-card">
-							<img src="Pictures/jesica.jpeg"
-								class="img-fluid align-middle rounded-circle">
-							<div class="card-text" style="font-size: small; text-align: center;">
+							<img src="Pictures/jesica.jpeg" class="img-fluid align-middle rounded-circle">
+							<div class="card-text small text-center">
 								<label><b>Jesica</b></label><br>
-								<label style="color: gray; margin-top: 0%;">13 June</label>
+								<label class="text-muted">13 June</label>
 							</div>
 						</div>
 
 						<div class="card border-0 col-3 col-sm-3  mt-3 mt-lg-3" id="profile-card">
-							<img src="Pictures/sarah.jpeg"
-								class="img-fluid align-middle rounded-circle">
-							<div class="card-text " style="font-size: small; text-align: center;">
+							<img src="Pictures/sarah.jpeg" class="img-fluid align-middle rounded-circle">
+							<div class="card-text small text-center">
 								<label><b>Sarah</b></label><br>
-								<label style="color: gray; margin-top: 0%;">14 June</label>
+								<label class="text-muted">14 June</label>
 							</div>
 						</div>
 
 						<div class="card border-0 col-3 col-sm-3  mt-3 mt-lg-3" id="profile-card">
-							<img src="Pictures/nora.jpeg"
-								class="img-fluid align-middle rounded-circle">
-							<div class="card-text" style="font-size: small; text-align: center;">
+							<img src="Pictures/nora.jpeg" class="img-fluid align-middle rounded-circle">
+							<div class="card-text small text-center">
 								<label><b>Nora</b></label><br>
-								<label style="color: gray; margin-top: 0%;">15 Jan</label>
+								<label class="text-muted">15 Jan</label>
 							</div>
 						</div>
 
 						<div class="card border-0 col-3 col-sm-3  mt-3 mt-lg-3" id="profile-card">
-							<img src="Pictures/nadia.jpeg"
-								class="img-fluid align-middle rounded-circle">
-							<div class="card-text" style="font-size: small; text-align: center;">
+							<img src="Pictures/nadia.jpeg" class="img-fluid align-middle rounded-circle">
+							<div class="card-text small text-center">
 								<label><b>Nadia</b></label><br>
-								<label style="color: gray; margin-top: 0%;">15 Jan</label>
+								<label class="text-muted">15 Jan</label>
 							</div>
 						</div>
 					</div>
@@ -480,13 +472,12 @@
 					<!-- view all user-->
 					<div class="border-top mt-lg-4 mt-2" id="view-all-user">
 						<div class="text-center align-middle mt-2 mb-2" >
-							<label style="color:rgb(15, 113, 217); font-size:14px;">View All
-								User</label>
+							<label class="text-info small">View All User</label>
 						</div>
 					</div>
 					<!-- End of view all user-->
 					</div>
-
+					<!--End of profile-->
 				</div>
 				<!--End of new Members card-->
 
@@ -494,11 +485,14 @@
 				<div class="col-sm-5 col-md-5 col-lg-4">
 					<div id="chat-area">
 					<!-- Nav bar of Direct chat-->
-					<nav class="navbar navbar-expand-lg border-bottom" style="height:49px;">
-						<a class="navbar-brand ms-3" style="font-size:larger;">Direct Chat</a>
-						<div class="ms-auto text-muted">
-							<button class="btn btn-warning rounded-4 text-white" type="submit"
-								style="font-size:small; height:19px; padding-top:0%;"><b>3</b></button>
+					<nav class="navbar navbar-expand-lg border-bottom ">
+						<div class="flex-container me-auto">
+							<a class="navbar-brand">Direct Chat</a>
+						</div>
+						<div class="flex-container text-muted">
+							<button class="btn btn-warning rounded-4 text-white" id="font-smaller" type="submit">
+								<b>3</b>
+							</button>
 							<i class="bi bi-dash ms-2"></i>
 							<i class="bi bi-chat-dots ms-2"></i>
 							<i class="bi bi-x fw-medium ms-2"></i>
@@ -507,22 +501,23 @@
 					<!-- End of Nav-bar of Direct chat-->
 
 					<!--Chat area-->
-					<div style="font-size:medium; margin-left: 5px; margin-right: 5px;" class="overflow-y-visible">
-
+					<div class="overflow-y-visible ms-2 me-2">
 						<div class="direct-chat-msg left">
 							<div class="mt-1">
 								<div>
-									<span style="letter-spacing: -1px;"><b>Alexander Pierce</b></span>
-									<span class="float-end pt-1" style="font-size:x-small; color: grey;">23
-										Jan
-										2:00 pm</span>
+									<span id="space"><b>Alexander Pierce</b></span>
+									<span class="float-end pt-2 text-muted" id="font-smaller">
+										23 Jan 2:00 pm</span>
 								</div>
 								<div class="card g-0 border-0">
 									<div class="row g-0">
-										<div class="col-1 mt-2"><img src="Pictures/alexandar.jpeg"
-												style="height: 40px; width: 40px;" class="rounded-circle"></div>
-										<div class="col-9 ms-4"><div class="direct-chat-text">Is this template
-												really for free? That's unbelievable!</div></div>
+										<div class="col-1 mt-2"><img src="Pictures/alexandar.jpeg" 
+											id="profile-sidenav" class="rounded-circle"></div>
+										<div class="col-9 ms-4">
+											<div class="direct-chat-text">
+												Is this template really for free? That's unbelievable!
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -531,17 +526,18 @@
 						<div class="direct-chat-msg right">
 							<div class="mt-4">
 								<div>
-									<span style="font-size: x-small; color: grey;">23 Jan 2:10 pm</span>
-									<span class="float-end" style="letter-spacing: -1px;"><b>Sarah
-											Bullock</b></span>
+									<span id="font-smaller" class="text-muted">23 Jan 2:10 pm</span>
+									<span class="float-end" id="space">
+										<b>Sarah Bullock</b></span>
 								</div>
 								<div class="card g-0 border-0">
 									<div class="row g-0">
-										<div class="col-10 ps-4 ps-lg-5 "><label
-												class="direct-chat-text bg-warning border-warning w-75"
-												style="color:white;">Yah! You better believe it !!<br></label></div>
+										<div class="col-10 ps-4 ps-lg-5 ">
+											<label class="direct-chat-text bg-warning border-warning w-75 text-white">
+												Yah! You better believe it !!<br></label>
+										</div>
 										<div class="col-2 pt-2 ps-3 ps-lg-4"><img src="Pictures/sarah.jpeg"
-												style="height: 40px; width: 40px;" class="rounded-circle"></div>
+												id="profile-sidenav" class="rounded-circle"></div>
 									</div>
 								</div>
 							</div>
@@ -550,15 +546,14 @@
 						<div class="direct-chat-msg left">
 							<div class="mt-4">
 								<div>
-									<span style="letter-spacing: -1px;"><b>Alexander Pierce</b></span>
-									<span class="float-end ps-1"
-										style="font-size: x-small; color: grey;">23 Jan
-										2:00 pm</span>
+									<span id="space"><b>Alexander Pierce</b></span>
+									<span class="float-end pt-2 text-muted" id="font-smaller">
+										23 Jan 2:00 pm</span>
 								</div>
 								<div class="card g-0 border-0">
 									<div class="row g-0">
 										<div class="col-1 mt-2"><img src="Pictures/alexandar.jpeg"
-												style="height: 40px; width: 40px;" class="rounded-circle"></div>
+											id="profile-sidenav" class="rounded-circle"></div>
 										<div class="col-9 ms-4"><label class="direct-chat-text"> Working with
 												AdminLTE on a great new app!! Wanna Join?</label></div>
 									</div>
@@ -569,8 +564,8 @@
 						<div class="direct-chat-msg right">
 							<div class="mt-4">
 								<div>
-									<span style="font-size: smaller; color: grey;">23 Jan 2:10 pm</span>
-									<span class="float-end" style="letter-spacing: -1px;"><b>Sarah
+									<span id="font-smaller" class="text-muted">23 Jan 2:10 pm</span>
+									<span class="float-end" id="space"><b>Sarah
 											Bullock</b></span>
 								</div>
 							</div>
@@ -581,13 +576,13 @@
 
 					<!--Enter text with send btn-->
 					<label class="input-group">
-						<label type="text" class="form-control" aria-label="Recipient's username"
-							aria-describedby="basic-addon2" style="border-right: 0px;">Type
-							Message...</label>
+						<label type="text" class="form-control border-end-0" aria-label="Recipient's username"
+							aria-describedby="basic-addon2">
+							Type Message...</label>
 						<div class="input-group-append">
 							<label
-								class="group-text bg-warning border-warning text-white rounded-end"
-								style="height: 40px; width: 60px; text-align: center; padding-top: 6px;">Send</label>
+								class="bg-warning text-white rounded-end align-content-center h-100 p-2">
+								Send</label>
 						</div>
 					</label>
 					<!--End of Enter text with send btn-->
@@ -605,11 +600,13 @@
 				<div class="col-sm-12 col-md-8 col-lg-8 mb-2">
 					<div id="order-div">
 					<!--Start of nav bar of Latest order-->
-					<nav class="navbar navbar-expand-lg border-bottom" style="height:49px;">
-						<a class="navbar-brand" style="font-size:larger;">Latest Order</a>
-						<div class="ms-auto text-muted">
-							<i class="bi bi-dash ms-2"></i>
-							<i class="bi bi-x ms-3"></i>
+					<nav class="navbar navbar-expand-lg border-bottom">
+						<div class="flex-container me-auto ps-2">
+							<a class="navbar-brand">Latest Order</a>
+						</div>
+						<div class="flex-container text-muted">
+							<i class="bi bi-dash me-3"></i>
+							<i class="bi bi-x me-3"></i>
 						</div>
 					</nav>
 					<!--End of nav bar of Latest Order-->
@@ -634,19 +631,19 @@
 									<td>
 										<span class="sparkline">
 											<span class="index"><span class="count"
-													style="height: 80%; background: green;"> 60,</span> </span>
+													style="height: 80%; background: green;"></span> </span>
 											<span class="index"><span class="count"
-													style="height: 85%;  background: green;">220,</span> </span>
+													style="height: 85%; background: green;"></span> </span>
 											<span class="index"><span class="count"
-													style="height: 79%;  background: green;">140,</span> </span>
+													style="height: 79%;  background: green;"></span> </span>
 											<span class="index"><span class="count-down"
-													style="height: 65%;">80,</span> </span>
+													style="height: 65%;"></span> </span>
 											<span class="index"><span class="count"
-													style="height: 49%; background: green;">110,</span> </span>
+													style="height: 49%; background: green;"></span> </span>
 											<span class="index"><span class="count-down"
-													style="height: 79%;">90,</span> </span>
+													style="height: 79%;"></span> </span>
 											<span class="index"><span class="count"
-													style="height: 49%;  background: green;">110,</span> </span>
+													style="height: 49%;  background: green;"></span> </span>
 										</span>
 									</td>
 								</tr>
@@ -797,10 +794,10 @@
 							</tbody>
 						</table>
 
-						<button class="bg-primary border-primary mb-3" id="order-status"> Place
-							New Order</button>
-						<button class="float-end text-black-50" id="view-all-btn"> View All
-							Order</button>
+						<button class="bg-primary border-primary mb-3" id="order-status"> 
+							Place New Order</button>
+						<button class="float-end text-black-50" id="view-all-btn">
+							View All Order</button>
 					</div>
 					<!--End od Latest order table-->
 					</div>
@@ -811,10 +808,11 @@
 				<div class="col-sm-12 col-md-5 col-lg-4" >
 					<div id="product-div">
 						<!--Start of nav bar of products-->
-					<nav class="navbar navbar-expand-lg border-bottom" style="height:49px;">
-						<a class="navbar-brand" style="font-size:large;">Recently Added
-							Products</a>
-						<div class="ms-auto text-muted">
+					<nav class="navbar navbar-expand-lg border-bottom">
+						<div class="flex-container me-auto ps-1">
+							<a class="navbar-brand">Recently Added Products</a>
+						</div>
+						<div class="flex-container text-muted">
 							<i class="bi bi-dash"></i>
 							<i class="bi bi-x ms-2"></i>
 						</div>
@@ -833,8 +831,8 @@
 										<label class="pt-3 ps-2" id="product-name">Samsung TV</label>
 										<label class="pt-2 float-end bg-warning border-warning rounded-1"
 											id="product-btn"><b>$1800</b></label><br>
-										<label class="pt-3 ps-2" id="product-detail">Samsung 32" 1080p 60Hz
-											LED smart HDTV</label>
+										<label class="pt-3 ps-2" id="product-detail">
+											Samsung 32" 1080p 60Hz LED smart HDTV</label>
 									</div>
 								</div>
 							</div>
@@ -850,8 +848,8 @@
 										<label class="pt-3 ps-2" id="product-name">Bicycle</label>
 										<label class="pt-2 float-end bg-primary border-primary rounded-1"
 											id="product-btn"><b>$700</b></label><br>
-										<label class="pt-3 ps-2" id="product-detail">26" Mongoose Dolomite
-											Men's 7-speed,Navy Blue..</label>
+										<label class="pt-3 ps-2" id="product-detail">
+											26" Mongoose Dolomite Men's 7-speed,Navy Blue..</label>
 									</div>
 								</div>
 							</div>
@@ -867,8 +865,9 @@
 										<label class="pt-3 ps-2" id="product-name">Xbox One</label>
 										<label class="pt-2 float-end bg-danger border-danger rounded-1"
 											id="product-btn"><b>$350</b></label><br>
-										<label class="pt-3 ps-2" id="product-detail">Xbox One Console Bundle
-											with Halo master chief Coll..</label>
+										<label class="pt-3 ps-2" id="product-detail">
+											Xbox One Console Bundle with Halo master chief Coll..
+										</label>
 									</div>
 								</div>
 							</div>
@@ -884,8 +883,9 @@
 										<label class="pt-3 ps-2" id="product-name">PlayStation 4</label>
 										<label class="pt-2 float-end bg-success border-success rounded-1"
 											id="product-btn"><b>$399</b></label><br>
-										<label class="pt-3 ps-2" id="product-detail">PlayStation 4 500GB
-											Console (PS4)</label>
+										<label class="pt-3 ps-2" id="product-detail">
+											PlayStation 4 500GB Console (PS4)
+										</label>
 									</div>
 								</div>
 							</div>
@@ -897,8 +897,8 @@
 					<!--Start of view all products-->
 					<div class="mt-4 border-top">
 						<div style="text-align: center; margin-top: 10px;">
-							<label style="color:rgb(15, 113, 217); font-size:14px;">View All
-								Products</label>
+							<label class="text-info small">
+								View All Products</label>
 						</div>
 					</div>
 					<!--End of view all products-->
@@ -908,7 +908,6 @@
 
 			</div>
 			<!--End of last row-->
-
 		</div>
     </body>
 </html>
