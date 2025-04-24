@@ -6,24 +6,21 @@ public class Employee {
 	private String email;
 	private String gender;
 	private String dob;
-	private String hobby;
 
-	public Employee(int id, String name, String email, String gender, String dob, String hobby) {
+	public Employee(int id, String name, String email, String gender, String dob) {
 		this.id = id;
 		this.fullName = name;
 		this.email = email;
 		this.gender = gender;
 		this.dob = dob;
-		this.hobby = hobby;
 	}
 
-	public Employee(String name, String email, String gender, String dob, String hobby) {
+	public Employee(String name, String email, String gender, String dob) {
 		super();
 		this.fullName = name;
 		this.email = email;
 		this.gender = gender;
 		this.dob = dob;
-		this.hobby = hobby;
 	}
 
 	public int getId() {
@@ -46,7 +43,4 @@ public class Employee {
 		return dob;
 	}
 
-	public String getHobby() {
-		return hobby;
-	}
 }

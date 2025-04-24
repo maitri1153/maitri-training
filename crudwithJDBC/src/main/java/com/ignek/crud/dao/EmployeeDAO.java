@@ -20,7 +20,7 @@ public class EmployeeDAO {
 		Connection connection = null;
 		try {
 			connection = DBConnection.initializeDatabase();
-		} catch (SQLException | ClassNotFoundException e) {
+		}catch (SQLException | ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 		return connection;
@@ -33,19 +33,18 @@ public class EmployeeDAO {
 			preparedStatement.setString(2, employee.getEmail());
 			preparedStatement.setString(3, employee.getGender());
 			preparedStatement.setString(4, employee.getDob());
-			preparedStatement.setString(5, employee.getHobby());
 			preparedStatement.executeUpdate();
-			logger.info("Data inserted Sucessfully...");
+			logger.info("Data Inserted Sucessfully.");
 		} catch (SQLException e) {
-			logger.warn("Error occured while inserting data...");
+			logger.warn("Error occured while Inserting data...");
 			e.printStackTrace();
 		}
 	}
 
-	public static void deleteEmployee(int id) throws SQLException {
+	public static void deleteEmployee(int ID) throws SQLException {
 		try (Connection connection = getConnection();
 				PreparedStatement statement = connection.prepareStatement(EmployeeConstant.DELETE);) {
-			statement.setInt(1, id);
+			statement.setInt(1, ID);
 			statement.executeUpdate();
 			logger.info("Data deleted Sucessfully...");
 		} catch (SQLException e) {
@@ -58,40 +57,38 @@ public class EmployeeDAO {
 		List<Employee> employeelist = new ArrayList<>();
 		try (Connection connection = getConnection();
 				PreparedStatement preparedStatement = connection.prepareStatement(EmployeeConstant.SELECT_USERS);) {
-			ResultSet rs = preparedStatement.executeQuery();
-			while (rs.next()) {
-				int emp_id = rs.getInt(EmployeeConstant.ID);
-				String name = rs.getString(EmployeeConstant.NAME);
-				String email = rs.getString(EmployeeConstant.EMAIL);
-				String gender = rs.getString(EmployeeConstant.GENDER);
-				String dob = rs.getString(EmployeeConstant.DOB);
-				String hobby = rs.getString(EmployeeConstant.HOBBY);
-				employeelist.add(new Employee(emp_id, name, email, gender, dob, hobby));
+			ResultSet resultset = preparedStatement.executeQuery();
+			while (resultset.next()) {
+				int empId = resultset.getInt(EmployeeConstant.ID);
+				String name = resultset.getString(EmployeeConstant.NAME);
+				String email = resultset.getString(EmployeeConstant.EMAIL);
+				String gender = resultset.getString(EmployeeConstant.GENDER);
+				String dob = resultset.getString(EmployeeConstant.DOB);
+				employeelist.add(new Employee(empId, name, email, gender, dob));
+				logger.info("Data fetch sucessfully.");
 			}
 		} catch (SQLException e) {
-			logger.warn("Error occured while getting all employee data...");
+			logger.warn("Error occured while getting employee data.");
 			e.printStackTrace();
 		}
 		return employeelist;
 	}
 
-	public static Employee getEmployee(int id) { 
+	public static Employee getEmployee(int ID) { 
 		Employee employee = null;
 		try (Connection connection = getConnection();
 				PreparedStatement preparedStatement = connection
 						.prepareStatement(EmployeeConstant.SELECT_USER_BY_ID);) {
-			System.out.println(id);
-			preparedStatement.setInt(1, id);
-			ResultSet rs = preparedStatement.executeQuery();
-			while (rs.next()) {
-				int emp_id = rs.getInt(EmployeeConstant.ID);
-				String name = rs.getString(EmployeeConstant.NAME);
-				String email = rs.getString(EmployeeConstant.EMAIL);
-				String gender = rs.getString(EmployeeConstant.GENDER);
-				String dob = rs.getString(EmployeeConstant.DOB);
-				String hobby = rs.getString(EmployeeConstant.HOBBY);
-				employee = new Employee(emp_id, name, email, gender, dob, hobby);
-				logger.info("Employee data fetch Sucessfully with id...");
+			preparedStatement.setInt(1, ID);
+			ResultSet resultset = preparedStatement.executeQuery();
+			while (resultset.next()) {
+				int empId = resultset.getInt(EmployeeConstant.ID);
+				String name = resultset.getString(EmployeeConstant.NAME);
+				String email =resultset.getString(EmployeeConstant.EMAIL);
+				String gender = resultset.getString(EmployeeConstant.GENDER);
+				String dob = resultset.getString(EmployeeConstant.DOB);
+				employee = new Employee(empId, name, email, gender, dob);
+				logger.info("Employee data fetch Sucessfully with EmployeeID...");
 			}
 		} catch (SQLException e) {
 			logger.warn("Error while getting employee data with id");
@@ -107,10 +104,9 @@ public class EmployeeDAO {
 			statement.setString(2, employee.getEmail());
 			statement.setString(3, employee.getGender());
 			statement.setString(4, employee.getDob());
-			statement.setString(5, employee.getHobby());
-			statement.setInt(6, employee.getId());
+			statement.setInt(5, employee.getId());
 			statement.executeUpdate();
-			logger.info("Employee updated Sucessfully....");
+			logger.info("Employee Data Updated Sucessfully.");
 		} catch (SQLException e) {
 			logger.warn("Get an exception while updating data");
 			e.printStackTrace();
