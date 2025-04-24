@@ -28,25 +28,26 @@ public class InsertServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException, NumberFormatException {
 		try {
-			logger.info("Started InsertServlet.");
 			String ID = request.getParameter(EmployeeConstant.ID);
 			String name = request.getParameter(EmployeeConstant.FULL_NAME);
 			String email = request.getParameter(EmployeeConstant.EMAIL);
 			String gender = request.getParameter(EmployeeConstant.GENDER);
 			String dob = request.getParameter(EmployeeConstant.DOB);
 			if (ID.isBlank()) {
-				logger.info("Started Inserting Data.");
+				logger.info("Insert operation is started");
 				Employee employee = new Employee(name, email, gender, dob);
 				EmployeeDAO.insertEmployee(employee);
+				logger.info("Insert operation is completed successfully");
 			} else {
-				logger.info("Startrd Updating data.");
+				logger.info("Update operation is started");
 				int empId = Integer.parseInt(request.getParameter(EmployeeConstant.ID));
 				Employee employee = new Employee(empId, name, email, gender, dob);
 				EmployeeDAO.updateEmployee(employee);
+				logger.info("Update operation is completed successfully");
 			}
 
 		} catch (Exception e) {
-			logger.warn("Exception Occures in InsertServlet");
+			logger.warn("Exception Occures");
 			e.printStackTrace();
 		}
 		doGet(request, response);

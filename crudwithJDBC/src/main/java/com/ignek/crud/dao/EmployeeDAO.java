@@ -34,10 +34,10 @@ public class EmployeeDAO {
 			preparedStatement.setString(3, employee.getGender());
 			preparedStatement.setString(4, employee.getDob());
 			preparedStatement.executeUpdate();
-			logger.info("Data Inserted Sucessfully.");
-			logger.info("Conncection is closed.");
+			logger.info("Data Inserted Sucessfully");
+			logger.info("Conncection is closed");
 		} catch (SQLException e) {
-			logger.warn("Error occured while Inserting data...");
+			logger.warn("Error occured while Inserting data");
 			e.printStackTrace();
 		}
 	}
@@ -47,10 +47,10 @@ public class EmployeeDAO {
 				PreparedStatement statement = connection.prepareStatement(EmployeeConstant.DELETE);) {
 			statement.setInt(1, ID);
 			statement.executeUpdate();
-			logger.info("Data deleted Sucessfully...");
-			logger.info("Conncection is closed.");
+			logger.info("Data deleted Sucessfully");
+			logger.info("Conncection is closed");
 		} catch (SQLException e) {
-			logger.warn("Error occured while deleting data...");
+			logger.warn("Error occured while deleting data");
 			e.printStackTrace();
 		}
 	}
@@ -68,10 +68,10 @@ public class EmployeeDAO {
 				String dob = resultset.getString(EmployeeConstant.DOB);
 				employeelist.add(new Employee(empId, name, email, gender, dob));
 			}
-			logger.info("Data fetch sucessfully.");
-			logger.info("Conncection is closed.");
+			logger.info("Data fetch sucessfully");
+			logger.info("Conncection is closed");
 		} catch (SQLException e) {
-			logger.warn("Error occured while getting employee data.");
+			logger.warn("Error occured while getting employee data");
 			e.printStackTrace();
 		}
 		return employeelist;
@@ -91,8 +91,8 @@ public class EmployeeDAO {
 				String gender = resultset.getString(EmployeeConstant.GENDER);
 				String dob = resultset.getString(EmployeeConstant.DOB);
 				employee = new Employee(empId, name, email, gender, dob);
-				logger.info("Employee data fetch Sucessfully with EmployeeID...");
-				logger.info("Conncection is closed.");
+				logger.info("Employee data fetch Sucessfully with EmployeeID");
+				logger.info("Conncection is closed");
 			}
 		} catch (SQLException e) {
 			logger.warn("Error while getting employee data with id");
@@ -110,8 +110,8 @@ public class EmployeeDAO {
 			statement.setString(4, employee.getDob());
 			statement.setInt(5, employee.getId());
 			statement.executeUpdate();
-			logger.info("Employee Data Updated Sucessfully.");
-			logger.info("Conncection is closed.");
+			logger.info("Employee Data Updated Sucessfully");
+			logger.info("Conncection is closed");
 		} catch (SQLException e) {
 			logger.warn("Error while updating data");
 			e.printStackTrace();

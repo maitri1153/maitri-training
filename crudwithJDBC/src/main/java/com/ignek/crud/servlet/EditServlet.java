@@ -21,7 +21,7 @@ public class EditServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		try {
-			logger.info("Started EditServlet");
+			logger.info("EditServlet is started");
 			int editId = Integer.parseInt(request.getParameter(EmployeeConstant.EDIT_ID));
 			Employee employee = EmployeeDAO.getEmployee(editId);
 			request.setAttribute(EmployeeConstant.EMPLOYEE, employee);
