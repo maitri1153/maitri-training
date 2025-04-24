@@ -2,7 +2,6 @@ package com.ignek.crud.servlet;
 
 import java.io.IOException;
 import java.util.List;
-import org.apache.catalina.tribes.util.Arrays;
 import com.ignek.crud.dao.EmployeeDAO;
 import com.ignek.crud.dto.Employee;
 import com.ignek.crud.constant.EmployeeConstant;
@@ -14,16 +13,13 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 public class InsertServlet extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 	private static final Logger logger = LogManager.getLogger(InsertServlet.class.getName());
-	
-	public InsertServlet() {
-		super();
-	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		List<Employee> employeelist = EmployeeDAO.getAllEmployees();	
+		List<Employee> employeelist = EmployeeDAO.getAllEmployees();
 		logger.info("Printing data on screen");
 		request.setAttribute(EmployeeConstant.EMPLOYEE_LIST, employeelist);
 		request.getRequestDispatcher("register.jsp").forward(request, response);

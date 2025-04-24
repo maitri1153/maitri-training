@@ -13,14 +13,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class EmployeeDAO {
-	
+
 	private static final Logger logger = LogManager.getLogger(EmployeeDAO.class.getName());
 
 	protected static Connection getConnection() {
 		Connection connection = null;
 		try {
 			connection = DBConnection.initializeDatabase();
-		}catch (SQLException | ClassNotFoundException e) {
+		} catch (SQLException | ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 		return connection;
@@ -55,7 +55,7 @@ public class EmployeeDAO {
 		}
 	}
 
-	public static List<Employee> getAllEmployees() { 
+	public static List<Employee> getAllEmployees() {
 		List<Employee> employeelist = new ArrayList<>();
 		try (Connection connection = getConnection();
 				PreparedStatement preparedStatement = connection.prepareStatement(EmployeeConstant.SELECT_USERS);) {
@@ -77,7 +77,7 @@ public class EmployeeDAO {
 		return employeelist;
 	}
 
-	public static Employee getEmployee(int ID) { 
+	public static Employee getEmployee(int ID) {
 		Employee employee = null;
 		try (Connection connection = getConnection();
 				PreparedStatement preparedStatement = connection
@@ -87,7 +87,7 @@ public class EmployeeDAO {
 			while (resultset.next()) {
 				int empId = resultset.getInt(EmployeeConstant.ID);
 				String name = resultset.getString(EmployeeConstant.NAME);
-				String email =resultset.getString(EmployeeConstant.EMAIL);
+				String email = resultset.getString(EmployeeConstant.EMAIL);
 				String gender = resultset.getString(EmployeeConstant.GENDER);
 				String dob = resultset.getString(EmployeeConstant.DOB);
 				employee = new Employee(empId, name, email, gender, dob);
@@ -113,7 +113,7 @@ public class EmployeeDAO {
 			logger.info("Employee Data Updated Sucessfully.");
 			logger.info("Conncection is closed.");
 		} catch (SQLException e) {
-			logger.warn("Get an exception while updating data");
+			logger.warn("Error while updating data");
 			e.printStackTrace();
 		}
 	}

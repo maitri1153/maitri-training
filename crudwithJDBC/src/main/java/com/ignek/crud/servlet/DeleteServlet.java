@@ -13,9 +13,9 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/DeleteServlet")
 public class DeleteServlet extends HttpServlet {
+
 	private static final long serialVersionUID = 1L;
 	private static final Logger logger = LogManager.getLogger(DeleteServlet.class.getName());
-
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
