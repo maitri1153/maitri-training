@@ -19,7 +19,7 @@ public class DBConnection {
 			logger.info("Connection is established");
 			return connection;
 		} catch (Exception e) {
-			logger.warn("Connection Breaks....");
+			logger.warn("Exception Occurs while Connecting to database.");
 			e.printStackTrace();
 		}
 		return connection;

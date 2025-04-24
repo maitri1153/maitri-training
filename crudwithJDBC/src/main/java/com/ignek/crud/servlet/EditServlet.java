@@ -16,20 +16,13 @@ import jakarta.servlet.http.HttpServletResponse;
 public class EditServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final Logger logger = LogManager.getLogger(EditServlet.class.getName());
-	
-	public EditServlet() {
-		super();
-	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		try {
-			logger.info("Startrd EditServlet");
-			int edit_id = Integer.parseInt(request.getParameter(EmployeeConstant.EDIT_ID));
-			Employee employee = EmployeeDAO.getEmployee(edit_id);
-			request.setAttribute("isDancing",employee.getHobby().contains("Dancing"));
-			request.setAttribute("isSinging",employee.getHobby().contains("Singing"));
-			request.setAttribute("isPainting",employee.getHobby().contains("Painting"));
+			logger.info("Started EditServlet");
+			int editId = Integer.parseInt(request.getParameter(EmployeeConstant.EDIT_ID));
+			Employee employee = EmployeeDAO.getEmployee(editId);
 			request.setAttribute(EmployeeConstant.EMPLOYEE, employee);
 			request.getRequestDispatcher("register.jsp").forward(request, response);
 		} catch (Exception e) {

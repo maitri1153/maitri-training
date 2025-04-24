@@ -16,11 +16,15 @@ import jakarta.servlet.http.HttpServletResponse;
 public class InsertServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static final Logger logger = LogManager.getLogger(InsertServlet.class.getName());
+	
+	public InsertServlet() {
+		super();
+	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		logger.info("Read data from database.");
 		List<Employee> employeelist = EmployeeDAO.getAllEmployees();	
+		logger.info("Printing data on screen");
 		request.setAttribute(EmployeeConstant.EMPLOYEE_LIST, employeelist);
 		request.getRequestDispatcher("register.jsp").forward(request, response);
 	}
@@ -28,25 +32,21 @@ public class InsertServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException, NumberFormatException {
 		try {
-			logger.info("Startrd InsertServlet.");
-			String id = request.getParameter(EmployeeConstant.ID);
+			logger.info("Started InsertServlet.");
+			String ID = request.getParameter(EmployeeConstant.ID);
 			String name = request.getParameter(EmployeeConstant.FULL_NAME);
 			String email = request.getParameter(EmployeeConstant.EMAIL);
 			String gender = request.getParameter(EmployeeConstant.GENDER);
 			String dob = request.getParameter(EmployeeConstant.DOB);
-			String[] hobbylist = request.getParameterValues(EmployeeConstant.HOBBY);
-			String hobby = Arrays.toString(hobbylist);
-			if (id.isBlank()) {
-				logger.info("Startrd insertEmployee function...");
-				Employee employee = new Employee(name, email, gender, dob, hobby);
+			if (ID.isBlank()) {
+				logger.info("Started Inserting Data.");
+				Employee employee = new Employee(name, email, gender, dob);
 				EmployeeDAO.insertEmployee(employee);
-				EmployeeConstant.valid = true;
 			} else {
-				logger.info("Startrd updateEMployee function...");
-				int emp_id = Integer.parseInt(request.getParameter(EmployeeConstant.ID));
-				Employee employee = new Employee(emp_id, name, email, gender, dob, hobby);
+				logger.info("Startrd Updating data.");
+				int empId = Integer.parseInt(request.getParameter(EmployeeConstant.ID));
+				Employee employee = new Employee(empId, name, email, gender, dob);
 				EmployeeDAO.updateEmployee(employee);
-				EmployeeConstant.valid = true;
 			}
 
 		} catch (Exception e) {
