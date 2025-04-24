@@ -21,8 +21,8 @@ public class DeleteServlet extends HttpServlet {
 			throws ServletException, IOException {
 		try {
 			logger.info("Started DeleteServlet");
-			int delete_id = Integer.parseInt(request.getParameter(EmployeeConstant.DELETE_ID));
-			EmployeeDAO.deleteEmployee(delete_id);
+			int deleteId = Integer.parseInt(request.getParameter(EmployeeConstant.DELETE_ID));
+			EmployeeDAO.deleteEmployee(deleteId);
 			request.getRequestDispatcher("InsertServlet").forward(request, response);
 		} catch (Exception e) {
 			logger.warn("Exception Occures in DeleteServlet");
