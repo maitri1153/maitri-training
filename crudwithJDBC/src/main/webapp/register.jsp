@@ -8,13 +8,15 @@
 		<meta charset="UTF-8">
 		<title>Register Page</title>
 	
-		<link rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-			crossorigin="anonymous">
-	
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      	rel="stylesheet"/>
+      	
+		<link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      	rel="stylesheet"/>
+      	
 		<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js">
 				</script>
+				
 	</head>
 
 	<body>
@@ -25,7 +27,7 @@
 						<div class="card-body p-4 p-md-5">
 						
 							<h3 class="mb-5 text-center">Employee Detail Form</h3>
-							<form action="InserServlet" method="post" class="was-validated">
+							<form action="InserServlet" method="post" class="needs-validation" novalidate>
 
 							<div class="form-group">
 								<label hidden> ID</label> 
@@ -33,12 +35,13 @@
 								    hidden value="${employee.id}">
 							</div>
 							
-							<div class="form-group">
+							<div>
 								<label>Full Name </label> 
-								<input type="text" name="fullName" required
-									class="form-control" value="${employee.fullName}"/>
+								<div class="input-group has-validation">
+								<input type="text" name="fullName" class="form-control" required value="${employee.fullName}"/>
 									 <div class="invalid-feedback">
             							Please enter a Valid Name
+          							</div>
           							</div>
 							</div>
 
@@ -126,4 +129,5 @@
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript"><%@include file="validation.js"%></script>
 </html>
