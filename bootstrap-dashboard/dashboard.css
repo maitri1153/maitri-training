@@ -1,3 +1,60 @@
+#nav-top{
+    height: 40px;
+}
+
+#count{
+    margin-left:-8px;
+    position: absolute;
+    font-size: xx-small;
+}
+
+#profile-nav{
+    height: 30px;
+    width: 30px;
+    border-radius: 40px;
+}
+
+#nav {
+    border-right: solid 1px black;
+    z-index: 999;
+    background: black;
+    width: 200px;
+    height: 100vh;
+    transition-property: transform;
+    transition-duration: .4s;
+    transform: translateX(-320px);
+    cursor: pointer;
+    color: white;
+}
+
+#nav.open {
+    transform: translateX(0);
+}
+
+#profile-sidenav{
+    height: 40px;
+    width: 40px;
+}
+
+#nav-status{
+    height: 6px;
+    width: 6px;
+    background: forestgreen;
+}
+
+#dropdown{
+    color:rgb(125, 114, 114); 
+ }
+ 
+.dropdown-menu.show{
+     margin-top: 20px;
+     display: contents;
+ }
+ 
+.dropdown-item:hover{
+     background-color: rgb(50, 46, 46);
+ }
+ 
 #page {
     margin-bottom: 50px;
     margin-right: 20px;
@@ -10,6 +67,15 @@
     text-align: left;
     margin-bottom: 20px;
     height: 50px;
+}
+
+#card-hight{
+    height: 80px;
+}
+
+#top-card-icon {
+    font-size: 33px;
+    color: white;
 }
 
 #cpu {
@@ -28,14 +94,13 @@
     background-color: orange;
 }
 
-#top-card-icon {
-    font-size: 30px;
-    color: white;
-}
-
 #progress-bar {
     font-size: smaller;
 }
+
+#progress-height{
+    height: 9px; 
+ }
 
 #increments {
     background-color: orange;
@@ -65,10 +130,6 @@
     margin-top: 5px;
 }
 
-#social-card-opc {
-    height: 90px;
-}
-
 #social-icon {
     font-size: 45px;
 }
@@ -78,13 +139,8 @@
     text-align: left;
 }
 
-#chat-area {
-    height: 410px;
-    border-style:solid;
-    border-width:thin;
-    border-color: #c1bcbc;
-    padding-left: 10px;
-    padding-right: 10px;
+#line-height{
+    height: 2px;
 }
 
 #profile-div {
@@ -94,6 +150,15 @@
     border-style:solid;
     border-width:thin;
     border-color: #c1bcbc;
+}
+
+#chat-area {
+    height: 410px;
+    border-style:solid;
+    border-width:thin;
+    border-color: #c1bcbc;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .direct-chat-text {
@@ -106,7 +171,6 @@
     color: #444;
     font-size: smaller
 }
-
 .direct-chat-text:after,
 .direct-chat-text:before {
     position: absolute;
@@ -137,28 +201,12 @@
     border-left-color: #ffce44;
 }
 
-#product {
-    height: 50px;
-    width: 50px;
-}
-
-#product-name {
-    color: rgba(12, 126, 241, 0.819);
-    font-size: small;
-}
-
-#product-detail {
-    color: rgb(93, 97, 97);
-    font-size: x-small;
-}
-
-#product-btn {
-    color: white;
-    height: 16px;
-    width: 40px;
-    font-size: small;
-    text-align: center;
-    padding-top: 5px;
+#order-div{
+    padding-left: 5px;
+    padding-right: 5px;
+    border-style:solid;
+    border-width:thin;
+    border-color: #afa9a9;
 }
 
 #order-status {
@@ -171,6 +219,11 @@
     border-radius: 2px;
 }
 
+button {
+    background: transparent;
+    border:white;
+}
+
 #view-all-btn{
     background-color:rgb(234 234 234);
     font-size: 15px;
@@ -181,13 +234,39 @@
     border-radius: 2px;
 }
 
-#order-div{
+#product-div{
     padding-left: 5px;
     padding-right: 5px;
+    height:450px;
     border-style:solid;
     border-width:thin;
-    border-color: #afa9a9;
+    border-color:  #afa9a9;;
 }
+
+#product {
+    height: 50px;
+    width: 50px;
+}
+
+#product-name {
+    color: rgba(12, 126, 241, 0.819);
+    font-size: small;
+}
+
+#product-btn {
+    color: white;
+    height: 16px;
+    width: 40px;
+    font-size: small;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#product-detail {
+    color: rgb(93, 97, 97);
+    font-size: x-small;
+}
+
 @media only screen and (max-width: 1200px) {
     #order-div {
         font-size: small;
@@ -205,57 +284,18 @@
         padding-top: 4px;
     }
   }
-#product-div{
-    padding-left: 5px;
-    padding-right: 5px;
-    height:450px;
-    border-style:solid;
-    border-width:thin;
-    border-color:  #afa9a9;;
-}
-#order-id{
-    color: blue;
-}
 
 .table.td {
     font-size: 5px;
     letter-spacing: -5px;
     font-family: papyrus;
 }
-
-.sparklist {
-    overflow: visible;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.sparkline {
-    display: inline-block;
-    height: 1em;
-    margin: 0 0.6em;
-}
-
 .sparkline .index {
     position: relative;
     float: left;
     width: 7px;
     height: 1em;
 }
-
-.sparkline .index .count-success {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 85%;
-    height: 0;
-    background: green;
-    font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
-}
-
 .sparkline .index .count {
     display: block;
     position: absolute;
@@ -267,7 +307,6 @@
     text-shadow: none;
     color: transparent;
 }
-
 .sparkline .index .count-down {
     display: block;
     position: relative;
@@ -281,94 +320,14 @@
     color: transparent;
 }
 
-button {
-    background: transparent;
-    border:white;
-}
-
-#nav {
-    border-right: solid 1px black;
-    z-index: 999;
-    background: black;
-    width: 200px;
-    height: 100vh;
-    transition-property: transform;
-    transition-duration: .4s;
-    transform: translateX(-320px);
-    cursor: pointer;
-    color: white;
-}
-
-#nav.open {
-    transform: translateX(0);
-}
-
-#profile-nav{
-    height: 30px;
-    width: 30px;
-    border-radius: 40px;
-}
-
-#icons{
-    float: end;
-}
-
-#nav-rigth{
-    margin-left: auto;
-}
-
-#dropdown{
-   color:rgb(125, 114, 114); 
-}
-
-.dropdown-menu.show{
-    margin-top: 20px;
-    display: contents;
-}
-
-.dropdown-item:hover{
-    background-color: rgb(50, 46, 46);
-}
-
-#nav-top{
-    height: 40px;
-}
-
-#count{
-    margin-left:-8px;
-    position: absolute;
-    font-size: xx-small;
-}
-
-#profile-sidenav{
-    height: 40px;
-    width: 40px;
-}
-
-#nav-status{
-    height: 6px;
-    width: 6px;
-    background: forestgreen;
-}
-
 #font-smaller{
     font-size: x-small;
 }
 
-#card-hight{
-    height: 80px;
-}
-
-#progress-height{
-   height: 9px; 
-}
-
-#line-height{
-    height: 2px;
-}
 #space{
     letter-spacing: -1px;
 }
+
 #line-space{
     line-height:0;
 }

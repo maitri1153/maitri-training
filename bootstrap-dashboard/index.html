@@ -6,6 +6,8 @@
         <title>Navigation</title>
        
         	<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+			<link rel="stylesheet" href="dashboard.css">
 			
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" 
 				rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
@@ -21,8 +23,6 @@
 
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-        	<link rel="stylesheet" href="dashboard.css">
-
         <script>
             function toggle() {
 	            var nav = document.querySelector("#nav"),
@@ -34,19 +34,16 @@
 
     <body>
 		<!--top navigation-->
-        <nav class="navbar bg-primary navbar-expand fixed-top w-100 text-white" id="nav-top">
+        <nav class="d-flex justify-content-between align-items-center bg-primary navbar-expand fixed-top w-100 text-white" id="nav-top">
           
-			<div class="container-flex me-auto">
-				<div class="ps-3">
-					<label class="text-white navbar-brand h-100">AdminLTE</label>
+			<div class="d-flex pt-2">
+					<h4 class="text-white ps-lg-5 ps-2">AdminLTE</h4>
 					<button type="button" onClick="toggle()">
-						<h4><i class="bi bi-list ms-lg-5 ms-md-5 text-white"></i></h4>
+						<h4><i class="bi bi-list ms-lg-5 ms-3  text-white"></i></h4>
 					</button>
-				</div>
 			</div>
 
-            <div class="container-flex">
-
+            <div>
                 <i class="bi bi-envelope mt-4"></i>
                 <span class="bg-success rounded-1 ps-1 pe-1" id="count">1</span>
 
@@ -294,7 +291,7 @@
 					
 					<div class="card g-0 mb-3" id="increments">
 						<div class="row g-0">
-							<div id="social-card-opc" class="col-3 text-center mt-0 bg-black bg-opacity-10">
+							<div class="col-3 text-center mt-0 bg-black bg-opacity-10">
 								<div class="align-content-center h-100">
 									<i class="bi bi-tag" id="social-icon"></i>
 								</div>
@@ -316,7 +313,7 @@
 
 					<div class="card g-0 mb-3" id="mentions">
 						<div class="row g-0">
-							<div id="social-card-opc" class="col-3 text-center bg-black bg-opacity-10">
+							<div class="col-3 text-center bg-black bg-opacity-10">
 								<div class="align-content-center h-100">
 									<i class="bi bi-heart" id="social-icon"></i>
 								</div>
@@ -338,7 +335,7 @@
 
 					<div class="card g-0 mb-3" id="download">
 						<div class="row g-0">
-							<div id="social-card-opc" class="col-3 text-center bg-black bg-opacity-10">
+							<div class="col-3 text-center bg-black bg-opacity-10">
 								<div class="h-100 align-content-center">
 									<i class="bi bi-cloud-download"id="social-icon"></i>
 								</div>
@@ -360,7 +357,7 @@
 
 					<div class="card g-0 mb-3" id="message">
 						<div class="row g-0">
-							<div id="social-card-opc" class="col-3 text-center bg-black bg-opacity-10">
+							<div class="col-3 text-center bg-black bg-opacity-10">
 								<div class="align-content-center h-100">
 									<i class="bi bi-chat" id="social-icon"></i>
 								</div>
@@ -403,7 +400,7 @@
 					<!-- profile cards (8)-->
 					<div class="row  col-sm-12 mt-4 container-fluid ms-1">
 
-						<div class="card border-0 col-3 col-sm-3" id="profile-card">
+						<div class="card border-0 col-3 col-sm-3">
 							<img src="Pictures/alexandar.jpeg" class="img-fluid align-middle rounded-circle">
 							<div class="card-text small text-center">
 								<label><b>Alexandar</b></label><br>
@@ -411,7 +408,7 @@
 							</div>
 						</div>
 
-						<div class="card border-0 col-3 col-sm-3" id="profile-card">
+						<div class="card border-0 col-3 col-sm-3">
 							<img src="Pictures/norman.jpeg" class="img-fluid align-middle rounded-circle">
 							<div class="card-text small text-center">
 								<label><b>Norman</b></label><br>
@@ -419,7 +416,7 @@
 							</div>
 						</div>
 
-						<div class="card border-0 col-3 col-sm-3" id="profile-card">
+						<div class="card border-0 col-3 col-sm-3">
 							<img src="Pictures/jane.jpeg" class="img-fluid align-middle rounded-circle">
 							<div class="card-text small text-center">
 								<label><b>Jane</b></label><br>
@@ -427,7 +424,7 @@
 							</div>
 						</div>
 
-						<div class="card border-0 col-3 col-sm-3" id="profile-card">
+						<div class="card border-0 col-3 col-sm-3">
 							<img src="Pictures/John.jpeg" class="img-fluid align-middle rounded-circle">
 							<div class="card-text small text-center">
 								<label><b>John</b></label><br>
@@ -435,7 +432,7 @@
 							</div>
 						</div>
 
-						<div class="card border-0 col-3 col-sm-3  mt-3 mt-lg-3" id="profile-card">
+						<div class="card border-0 col-3 col-sm-3  mt-3 mt-lg-3">
 							<img src="Pictures/jesica.jpeg" class="img-fluid align-middle rounded-circle">
 							<div class="card-text small text-center">
 								<label><b>Jesica</b></label><br>
@@ -443,7 +440,7 @@
 							</div>
 						</div>
 
-						<div class="card border-0 col-3 col-sm-3  mt-3 mt-lg-3" id="profile-card">
+						<div class="card border-0 col-3 col-sm-3  mt-3 mt-lg-3">
 							<img src="Pictures/sarah.jpeg" class="img-fluid align-middle rounded-circle">
 							<div class="card-text small text-center">
 								<label><b>Sarah</b></label><br>
@@ -451,7 +448,7 @@
 							</div>
 						</div>
 
-						<div class="card border-0 col-3 col-sm-3  mt-3 mt-lg-3" id="profile-card">
+						<div class="card border-0 col-3 col-sm-3  mt-3 mt-lg-3">
 							<img src="Pictures/nora.jpeg" class="img-fluid align-middle rounded-circle">
 							<div class="card-text small text-center">
 								<label><b>Nora</b></label><br>
@@ -459,7 +456,7 @@
 							</div>
 						</div>
 
-						<div class="card border-0 col-3 col-sm-3  mt-3 mt-lg-3" id="profile-card">
+						<div class="card border-0 col-3 col-sm-3  mt-3 mt-lg-3">
 							<img src="Pictures/nadia.jpeg" class="img-fluid align-middle rounded-circle">
 							<div class="card-text small text-center">
 								<label><b>Nadia</b></label><br>
@@ -470,7 +467,7 @@
 					<!--End of profile cards (8)-->
 
 					<!-- view all user-->
-					<div class="border-top mt-lg-4 mt-2" id="view-all-user">
+					<div class="border-top mt-lg-4 mt-2">
 						<div class="text-center align-middle mt-2 mb-2" >
 							<label class="text-info small">View All User</label>
 						</div>
@@ -624,7 +621,7 @@
 							</thread>
 							<tbody>
 								<tr>
-									<td id="order-id">OR9842</td>
+									<td class="text-info">OR9842</td>
 									<td>Call of Duty IV</td>
 									<td><label class="bg-success border-success"
 											id="order-status">shipped</label></td>
@@ -648,7 +645,7 @@
 									</td>
 								</tr>
 								<tr>
-									<td id="order-id">OR1848</td>
+									<td class="text-info">OR1848</td>
 									<td>Samsung Smart TV</td>
 									<td><label class="bg-warning border-warning"
 											id="order-status">Pending</label></td>
@@ -672,7 +669,7 @@
 									</td>
 								</tr>
 								<tr>
-									<td id="order-id">OR7429</td>
+									<td class="text-info">OR7429</td>
 									<td>iPhone 6 Plus</td>
 									<td><label class="bg-danger border-danger"
 											id="order-status">Delivered</label></td>
@@ -696,7 +693,7 @@
 									</td>
 								</tr>
 								<tr>
-									<td id="order-id">OR7429</td>
+									<td class="text-info">OR7429</td>
 									<td>Samsung Smart TV</td>
 									<td><label class="bg-primary border-primary"
 											id="order-status">Processing</label></td>
@@ -720,7 +717,7 @@
 									</td>
 								</tr>
 								<tr>
-									<td id="order-id">OR1848</td>
+									<td class="text-info">OR1848</td>
 									<td>Samsung Smart TV</td>
 									<td><label class="bg-warning border-warning"
 											id="order-status">Pending</label></td>
@@ -744,7 +741,7 @@
 									</td>
 								</tr>
 								<tr>
-									<td id="order-id">OR7429</td>
+									<td class="text-info">OR7429</td>
 									<td>iPhone 6 Plus</td>
 									<td><label class="bg-danger border-danger"
 											id="order-status">Delivered</label></td>
@@ -768,7 +765,7 @@
 									</td>
 								</tr>
 								<tr>
-									<td id="order-id">OR9842</td>
+									<td class="text-info">OR9842</td>
 									<td>Call of Duty IV</td>
 									<td><label class="bg-success border-success"
 											id="order-status">shipped</label></td>
