@@ -324,6 +324,10 @@ button {
     font-size: x-small;
 }
 
+#font-x-small{
+    font-size: xx-small;
+}
+
 #space{
     letter-spacing: -1px;
 }
