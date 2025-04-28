@@ -36,7 +36,7 @@
 							</div>
 							
 							<div>
-								<label>Full Name </label> 
+								<label> Name </label> 
 								<div class="input-group has-validation">
 								<input type="text" name="fullName" class="form-control" required 
 									 value="${employee.fullName}"/>
