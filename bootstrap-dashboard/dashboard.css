@@ -274,9 +274,18 @@ button {
     #profile-div{
         height: fit-content;
     }
+    #font-large{
+        font-size: x-large;
+    }
   }
 
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (max-width: 600px) {
+    #font-large{
+        font-size:large;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
     #profile-div{
         height: 410px;
     }
