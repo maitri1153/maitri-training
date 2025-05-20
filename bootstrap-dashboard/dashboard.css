@@ -43,16 +43,12 @@
 }
 
 #dropdown{
-    color:rgb(125, 114, 114); 
- }
- 
-.dropdown-menu.show{
-     margin-top: 20px;
-     display: contents;
+    color:rgb(116, 102, 102); 
  }
  
 .dropdown-item:hover{
-     background-color: rgb(50, 46, 46);
+     background-color: #444;
+     display: contents;
  }
  
 #page {
